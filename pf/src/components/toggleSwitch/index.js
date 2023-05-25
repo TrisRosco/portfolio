@@ -1,12 +1,16 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./styles.css";
 
-const ToggleSwitch = () => {
+const ToggleSwitch = ({ onClick }) => {
   const [isOn, setIsOn] = useState(false);
 
-  const toggle = () => setIsOn(!isOn);
+  const toggle = () => {
+    setIsOn(!isOn);
+    if (onClick) {
+      onClick();
+    }
+  };
 
   const spring = {
     type: "spring",
