@@ -1,7 +1,5 @@
 import React from "react";
 
-// button component
-
 const Button = ({ children, ...props }) => {
   const handleClick = () => {
     console.log("button clicked");
