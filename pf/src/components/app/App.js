@@ -14,8 +14,11 @@ function App() {
         <p>My name is Tristan</p>
         <p>This is my cool app</p>
         <p>please hire me</p>
-        <Button>Click me</Button>
-        <img src={jeff} alt="jeff" />
+        <div id="buttonDiv">
+          <Button>Click me</Button>
+          <Button>Click me</Button>
+        </div>
+        {/* <img src={jeff} alt="jeff" /> */}
       </header>
     </div>
   );

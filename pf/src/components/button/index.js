@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Button = ({ children, ...props }) => {
   const handleClick = () => {
@@ -6,9 +7,19 @@ const Button = ({ children, ...props }) => {
   };
 
   return (
-    <button {...props} onClick={handleClick}>
+    <motion.button
+      {...props}
+      onClick={handleClick}
+      whileHover={{ backgroundColor: "gray", color: "#000" }}
+      whileTap={{
+        scale: 1.0,
+        boxShadow: "2px 2px 2px",
+        translateY: 0.9,
+        translateX: 0.9,
+      }}
+    >
       {children}
-    </button>
+    </motion.button>
   );
 };
 
