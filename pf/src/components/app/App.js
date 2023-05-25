@@ -1,5 +1,6 @@
 import "./App.css";
 import Button from "../button";
+import ToggleSwitch from "../toggleSwitch";
 import { useEffect, useState } from "react";
 import jeff from "../../assets/images/jeff.jpg";
 
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <ToggleSwitch> </ToggleSwitch>
         <p>My name is Tristan</p>
         <p>This is my cool app</p>
         <p>please hire me</p>
