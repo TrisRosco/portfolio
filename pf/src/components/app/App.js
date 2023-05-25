@@ -5,14 +5,27 @@ import { useEffect, useState } from "react";
 import jeff from "../../assets/images/jeff.jpg";
 
 function App() {
+  const [isNVGOn, setIsNVGOn] = useState(false);
+
   useEffect(() => {
     console.log("App loaded");
   }, []);
 
+  const nvgMode = () => {
+    setIsNVGOn(!isNVGOn);
+    if (isNVGOn === true) {
+      document.body.style.color = "green";
+      console.log("nvg mode on");
+    } else {
+      document.body.style.color = "black";
+      console.log("nvg mode off");
+    }
+  };
+
   return (
     <div className="App">
       <header className="App-header">
-        <ToggleSwitch> </ToggleSwitch>
+        <ToggleSwitch onClick={nvgMode} />
         <p>My name is Tristan</p>
         <p>This is my cool app</p>
         <p>please hire me</p>

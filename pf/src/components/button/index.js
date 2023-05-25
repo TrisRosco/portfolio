@@ -10,7 +10,7 @@ const Button = ({ children, ...props }) => {
     <motion.button
       {...props}
       onClick={handleClick}
-      whileHover={{ backgroundColor: "gray", color: "#000" }}
+      whileHover={{ backgroundColor: "rgb(102, 102, 102)", color: "#000" }}
       whileTap={{
         scale: 1.0,
         boxShadow: "2px 2px 2px",
