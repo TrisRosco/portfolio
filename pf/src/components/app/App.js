@@ -2,7 +2,7 @@ import "./App.css";
 import Button from "../button";
 import ToggleSwitch from "../toggleSwitch";
 import { useEffect, useState } from "react";
-import jeff from "../../assets/images/jeff.jpg";
+// import jeff from "../../assets/images/jeff.jpg";
 
 function App() {
   const [isNVGOn, setIsNVGOn] = useState(false);
@@ -25,13 +25,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <ToggleSwitch onClick={nvgMode} />
         <p>My name is Tristan</p>
         <p>This is my cool app</p>
         <p>please hire me</p>
         <div id="buttonDiv">
           <Button>Click me</Button>
-          <Button>Click me</Button>
+          <ToggleSwitch TestId="toggle" onClick={nvgMode} />
         </div>
         {/* <img src={jeff} alt="jeff" /> */}
       </header>
