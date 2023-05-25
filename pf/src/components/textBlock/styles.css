@@ -5,4 +5,5 @@
     justify-content: center;
     font-family: 'Terminal', sans-serif;
     font-size: calc(10px + 2vmin);
+    font-weight: 600;
 }

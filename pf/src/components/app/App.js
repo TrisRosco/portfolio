@@ -30,8 +30,8 @@ function App() {
           showShadow={isNVGOn ? true : false}
           textColor={isNVGOn ? "#7FFF00" : "#006400"}
           text1="My name is Tristan"
-          text2="This is my cool app"
-          text3="please hire me"
+          text2="Look at this cool app"
+          text3="Please hire me"
         />
         <div id="buttonDiv">
           <Button>Click me</Button>
