@@ -2,6 +2,7 @@ import "./App.css";
 import Button from "../button";
 import ToggleSwitch from "../toggleSwitch";
 import { useEffect, useState } from "react";
+import TextBlock from "../textBlock";
 // import jeff from "../../assets/images/jeff.jpg";
 
 function App() {
@@ -11,13 +12,13 @@ function App() {
     console.log("App loaded");
   }, []);
 
+  // a function that changes the color of the text in the textblock component
+
   const nvgMode = () => {
     setIsNVGOn(!isNVGOn);
     if (isNVGOn === true) {
-      document.body.style.color = "green";
       console.log("nvg mode on");
     } else {
-      document.body.style.color = "black";
       console.log("nvg mode off");
     }
   };
@@ -25,9 +26,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>My name is Tristan</p>
-        <p>This is my cool app</p>
-        <p>please hire me</p>
+        <TextBlock
+          showShadow={isNVGOn ? true : false}
+          textColor={isNVGOn ? "#7FFF00" : "#006400"}
+          text1="My name is Tristan"
+          text2="This is my cool app"
+          text3="please hire me"
+        />
         <div id="buttonDiv">
           <Button>Click me</Button>
           <ToggleSwitch TestId="toggle" onClick={nvgMode} />
