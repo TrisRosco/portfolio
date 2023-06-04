@@ -19,7 +19,7 @@ button {
   button:active {
     background-color: rgb(156, 156, 156);
     transition: transform 0.1s ease-in-out;
-    transform : translate(2px, 2px);
+    transform : translate(2px, 2px) scale(0.98) box-shadow(0px, 0px);
   }
 
   @keyframes boop {
