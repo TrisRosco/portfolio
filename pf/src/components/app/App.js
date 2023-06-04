@@ -3,7 +3,8 @@ import Button from "../button";
 import ToggleSwitch from "../toggleSwitch";
 import { useEffect, useState } from "react";
 import TextBlock from "../textBlock";
-// import jeff from "../../assets/images/jeff.jpg";
+import jeff from "../../assets/images/jeff.jpg";
+import Card from "../card";
 
 function App() {
   const [isNVGOn, setIsNVGOn] = useState(false);
@@ -12,15 +13,16 @@ function App() {
     console.log("App loaded");
   }, []);
 
-  // a function that changes the color of the text in the textblock component
-
-  const nvgMode = () => {
-    setIsNVGOn(!isNVGOn);
+  useEffect(() => {
     if (isNVGOn === true) {
       console.log("nvg mode on");
     } else {
       console.log("nvg mode off");
     }
+  }, [isNVGOn]);
+
+  const nvgMode = () => {
+    setIsNVGOn(!isNVGOn);
   };
 
   return (
@@ -34,10 +36,12 @@ function App() {
           text3="Please hire me"
         />
         <div id="buttonDiv">
-          <Button>Click me</Button>
+          {/* <Button>Click me</Button> */}
           <ToggleSwitch TestId="toggle" onClick={nvgMode} />
         </div>
         {/* <img src={jeff} alt="jeff" /> */}
+        <Card header="Let's clean up pentewan beach!" body="This beach is utterly disgusting, let's do something about it!" />
+        <Card header="The park is full of heroin needles" body="I can't eat them all by myself" />
       </header>
     </div>
   );
