@@ -7,6 +7,8 @@ import jeff from "../../assets/images/jeff.jpg";
 import Card from "../card";
 import Card2 from "../card2";
 import Card3 from "../card3";
+import Card4 from "../card4";
+
 
 
 function App() {
@@ -48,6 +50,8 @@ function App() {
         <Card3 color="#ff5090" header="Help! I've accidentally swallowed 82 spiders!" body="I was trying to tie my shoes!" />
         <Card3 color="#ff8910" header="My dog smells awful" body="He hasn't got a nose" />
         {/* <img src={jeff} alt="jeff" /> */}
+        <Card4></Card4>
+
       </header>
     </div>
   );
