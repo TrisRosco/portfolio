@@ -46,9 +46,7 @@ function App() {
         </div>
         <Card header="Let's clean up pentewan beach!" body="This beach is utterly disgusting, let's do something about it!" />
         <Card2 header="The park is full of heroin needles" body="I can't eat them all by myself" />
-        <Card2 header="There's a foul smell in the public toilets" body="I just thought you aught to know" />
         <Card3 color="#ff5090" header="Help! I've accidentally swallowed 82 spiders!" body="I was trying to tie my shoes!" />
-        <Card3 color="#ff8910" header="My dog smells awful" body="He hasn't got a nose" />
         {/* <img src={jeff} alt="jeff" /> */}
         <Card4></Card4>
 
