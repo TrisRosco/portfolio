@@ -1,71 +1,159 @@
-import * as React from "react";
+import React, { useState } from "react";
 import List from "@mui/material/List";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import Collapse from "@mui/material/Collapse";
-import { motion } from "framer-motion";
-import { height, maxHeight } from "@mui/system";
+import Badge from "@mui/material/Badge";
+import Button from "@mui/material/Button";
 
-export default function Card4() {
-  const [open, setOpen] = React.useState(true);
+export default function Card4(props) {
+  const [open, setOpen] = useState(false);
+  const [thumbsUp, setThumbsUp] = useState(0);
 
-  const handleClick = () => {
+  const handleExpand = () => {
     setOpen(!open);
   };
 
+  const handleThumbsUp = () => {
+    setThumbsUp(thumbsUp + 1);
+  };
+
   return (
-    <motion.div>
-    <List
-      sx={{
-        width: "100%",
-        maxWidth: 480,
-        bgcolor: "#ff5090",
+    <div
+      style={{
+        width: 480,
+        backgroundColor: props.color,
         borderRadius: "10px",
         border: "none",
-        boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.75)",
-        allignItems: "center",
-        justifyContent: "center",
-        display: "inline-block",
+        boxShadow: "2px 2px 4px 0px rgba(0, 0, 0, 0.55)",
+        marginBottom: "10px",
+        marginTop: "10px",
+        paddingBottom: 0,
       }}
-      component="nav"
-      aria-labelledby="nested-list-subheader"
     >
-      <ListItemButton onClick={handleClick}>
-        <ListItemText
-          primary="Let's get this awful beach sorted!"
-          sx={{
-            bgcolor: "white",
-            width: "100%",
-            height: "100%",
-            maxWidth: 300,
-            maxHeight: 100,
-            borderRadius: "5px",
-            border: "none",
-            boxShadow: "inset 2px 2px 2px 0px rgba(0,0,0,0.35)",
-            allignItems: "center",
-            justifyContent: "center",
-            display: "inline-block",
-          }}
-        />
-      </ListItemButton>
-      <Collapse in={open} timeout="auto" unmountOnExit>
-        <List
-          component="div"
-          disablePadding
-          sx={{
-            bgcolor: "white",
-            height: "100%",
-            maxHeight: 100,
-            borderRadius: "5px",
-            border: "none",
+      <List component="nav" aria-labelledby="nested-list-subheader">
+        <h2
+          style={{
+            marginTop: "0px",
+            marginBottom: "0px",
           }}
         >
-          <ListItemText primary="This beach SUCKS, honestly. We really need to sort it" />
-          <ListItemText primary="I propose that we all bring one big henry hoover" />
-        </List>
-      </Collapse>
-    </List>
-    </motion.div>
+          ^^
+        </h2>
+        <h4
+          style={{
+            backgroundColor: "#D9D9D9",
+            borderRadius: "5px",
+            margin: "0 25px 10px",
+            padding: "10px",
+            boxShadow: "0px 0px 4px 0px rgba(0, 0, 0, 0.35)",
+          }}
+        >
+          {props.header}
+        </h4>
+        <Button
+          onClick={handleExpand}
+          variant="contained"
+          sx={{
+            bgcolor: "#2F3E46",
+            color: "#D9D9D9",
+            boxShadow: "2px 2px 2px 0px rgba(0, 0, 0, 0.55)",
+            borderRadius: "5px",
+            fontSize: "12px",
+            fontWeight: "bold",
+            width: "90px",
+            height: "30px",
+            alignContent: "left",
+            marginRight: "auto",
+            ":hover": {
+              backgroundColor: "#D9D9D9",
+              color: "#2F3E46",
+              boxShadow: "2px 2px 1px 0px rgba(0, 0, 0, 0.55)",
+              transition: "0.2s",
+            },
+            ":active": {
+              backgroundColor: "#D9D9D9",
+              color: "#2F3E46",
+              transform: "translate(2px, 2px)",
+              boxShadow: "0px 0px 0px 0px rgba(0, 0, 0, 0.55)",
+              transition: "0.1s",
+            },
+          }}
+        >
+          Details
+        </Button>
+        <Badge
+          badgeContent={thumbsUp}
+          color="primary"
+          sx={{
+            marginLeft: "10px",
+          }}
+        >
+          <Button
+            onClick={handleThumbsUp}
+            variant="contained"
+            sx={{
+              bgcolor: "#2F3E46",
+              color: "#D9D9D9",
+              boxShadow: "2px 2px 2px 0px rgba(0, 0, 0, 0.55)",
+              borderRadius: "5px",
+              fontSize: "12px",
+              fontWeight: "bold",
+              width: 30,
+              height: 30,
+              minWidth: 0,
+              padding: 0,
+              "& .MuiButton-label": {
+                width: "100%",
+              },
+            }}
+          >
+            +
+          </Button>
+        </Badge>
+        <Button
+          variant="contained"
+          sx={{
+            bgcolor: "#2F3E46",
+            color: "#D9D9D9",
+            boxShadow: "2px 2px 2px 0px rgba(0, 0, 0, 0.55)",
+            borderRadius: "5px",
+            fontSize: "12px",
+            fontWeight: "bold",
+            width: 30,
+            height: 30,
+            minWidth: 0,
+            padding: 0,
+            marginLeft: "10px",
+            "& .MuiButton-label": {
+              width: "100%",
+            },
+          }}
+        >
+          !
+        </Button>
+        <Collapse in={open} timeout="auto" unmountOnExit>
+          <List
+            component="div"
+            disablePadding
+            sx={{
+              bgcolor: "#D9D9D9",
+              height: "100%",
+              maxHeight: 500,
+              borderRadius: "5px",
+              border: "none",
+              zIndex: 1,
+            }}
+          >
+            <ListItemText
+              primary={props.body}
+              sx={{
+                padding: "10px",
+                marginBottom: "0px",
+              }}
+            />
+          </List>
+        </Collapse>
+      </List>
+    </div>
   );
 }
