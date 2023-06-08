@@ -86,6 +86,7 @@ export default function Card4(props) {
           color="primary"
           sx={{
             marginLeft: "10px",
+            
           }}
         >
           <Button
@@ -104,6 +105,19 @@ export default function Card4(props) {
               padding: 0,
               "& .MuiButton-label": {
                 width: "100%",
+              },
+              ":hover": {
+                backgroundColor: "#D9D9D9",
+                color: "#2F3E46",
+                boxShadow: "2px 2px 1px 0px rgba(0, 0, 0, 0.55)",
+                transition: "0.2s",
+              },
+              ":active": {
+                backgroundColor: "#D9D9D9",
+                color: "#2F3E46",
+                transform: "translate(2px, 2px)",
+                boxShadow: "0px 0px 0px 0px rgba(0, 0, 0, 0.55)",
+                transition: "0.1s",
               },
             }}
           >
@@ -126,6 +140,19 @@ export default function Card4(props) {
             marginLeft: "10px",
             "& .MuiButton-label": {
               width: "100%",
+            },
+            ":hover": {
+              backgroundColor: "#D9D9D9",
+              color: "#2F3E46",
+              boxShadow: "2px 2px 1px 0px rgba(0, 0, 0, 0.55)",
+              transition: "0.2s",
+            },
+            ":active": {
+              backgroundColor: "#D9D9D9",
+              color: "#2F3E46",
+              transform: "translate(2px, 2px)",
+              boxShadow: "0px 0px 0px 0px rgba(0, 0, 0, 0.55)",
+              transition: "0.1s",
             },
           }}
         >
