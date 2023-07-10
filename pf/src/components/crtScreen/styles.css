@@ -128,6 +128,26 @@
       text-shadow: 2.6208764473832513px 0 1px rgba(0,30,255,0.5), -2.6208764473832513px 0 1px rgba(255,0,80,0.3), 0 0 3px;
     }
   }
+
+  @keyframes leftToRight {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-6deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(6deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+
   .crtScreen::after {
     content: " ";
     display: block;
@@ -142,6 +162,7 @@
     pointer-events: none;
     animation: flicker 0.1s infinite;
     border-radius: 10px;
+    box-shadow: inset 0 0 10px 15px rgba(0, 0, 0, 0.164);
   }
   .crtScreen::before {
     content: " ";
@@ -156,6 +177,8 @@
     background-size: 100% 2px, 3px 100%;
     pointer-events: none;
     border-radius: 10px;
+    box-shadow: inset 0 0 10px 15px rgba(0, 0, 0, 0.164);
+    /* box-shadow: inset 0px 2px 2px 5px rgba(255, 255, 255, 0.274); */
   }
   .crtScreen {
     animation: textShadow 0.1s infinite;
@@ -181,4 +204,5 @@
   }
   #my-face {
     width: 100px;
+    animation: leftToRight 1s linear infinite;
   }

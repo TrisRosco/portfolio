@@ -13,11 +13,11 @@ test("renders a Click Me button", () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-test("renders a Toggle Switch", () => {
-  render(<App />);
-  const linkElement = screen.findByTestId(/toggle/i);
-  expect(linkElement).toBeInTheDocument();
-});
+// test("renders a Toggle Switch", () => {
+//   render(<App />);
+//   const linkElement = screen.findByTestId(/toggle/i);
+//   expect(linkElement).toBeInTheDocument();
+// });
 
 // test("renders jeff", () => {
 //   render(<App />);

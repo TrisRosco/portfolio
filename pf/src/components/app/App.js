@@ -3,10 +3,9 @@ import ToggleSwitch from "../toggleSwitch";
 import CrtOuter from "../crtOuter";
 import { useEffect, useState } from "react";
 import jeff from "../../assets/images/jeff.jpg";
+import welcome from "../../assets/sounds/welcome.mp3";
 function App() {
   const [isNVGOn, setIsNVGOn] = useState(false);
-  const [deviceUptime, setDeviceUptime] = useState(0);
-  const [powerConsumption, setPowerConsumption] = useState(0);
 
   useEffect(() => {
     console.log("App loaded");
@@ -24,10 +23,11 @@ function App() {
     setIsNVGOn(!isNVGOn);
   };
 
-  const handlePowerCalc = (e) => {
-    setDeviceUptime(e.target.value);
-    setPowerConsumption(Math.round(e.target.value * 0.14 * 10) / 10);
+  const playWelcome = () => {
+    const audio = new Audio(welcome);
+    audio.play();
   };
+
 
   return (
     <div className="App">
@@ -35,6 +35,7 @@ function App() {
           <CrtOuter />
           <div className="pc-tower">
           <ToggleSwitch isNVGOn={isNVGOn} nvgMode={nvgMode} />
+          <button id="welcome-button" onClick={playWelcome}> Click me </button>
 
           </div>
       </header>
