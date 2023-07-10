@@ -1,5 +1,6 @@
 import "./App.css";
 import ToggleSwitch from "../toggleSwitch";
+import CrtScreen from "../crtScreen";
 import { useEffect, useState } from "react";
 import jeff from "../../assets/images/jeff.jpg";
 function App() {
@@ -31,6 +32,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <CrtScreen />
         <ToggleSwitch isNVGOn={isNVGOn} nvgMode={nvgMode} />
 
       </header>
