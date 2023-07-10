@@ -140,7 +140,8 @@
     opacity: 0;
     z-index: 2;
     pointer-events: none;
-    animation: flicker 0.15s infinite;
+    animation: flicker 0.1s infinite;
+    border-radius: 10px;
   }
   .crtScreen::before {
     content: " ";
@@ -154,8 +155,10 @@
     z-index: 2;
     background-size: 100% 2px, 3px 100%;
     pointer-events: none;
+    border-radius: 10px;
   }
   .crtScreen {
     animation: textShadow 0.6s infinite;
     width: 80%;
+    height: 80%;
   }

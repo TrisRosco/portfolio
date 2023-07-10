@@ -11,7 +11,7 @@ const CrtScreen = () => {
             <p>Jeff is a cool guy</p>
             </div>
             <div className="crtScreen__content--image">
-            <img src={jeff} alt="jeff" />
+            {/* <img src={jeff} alt="jeff" /> */}
             </div>
         </div>
         </div>

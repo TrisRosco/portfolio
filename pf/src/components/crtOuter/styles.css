@@ -1,0 +1,21 @@
+.plastic-casing-outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px 10px #0000001f, 0 0 10px 10px #0000001f;
+    border: none;
+}
+
+.plastic-casing-inner{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: #282c34;
+    border-radius: 10px;
+    border: none;
+
+}
