@@ -161,4 +161,24 @@
     animation: textShadow 0.6s infinite;
     width: 80%;
     height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .crtScreen-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .crtScreen-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #my-face {
+    width: 100px;
   }

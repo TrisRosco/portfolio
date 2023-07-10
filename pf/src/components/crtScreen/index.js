@@ -1,17 +1,17 @@
 import React from "react";
 import "./styles.css";
-import jeff from "../../assets/images/jeff.jpg";
+import face from "../../assets/images/faceLQ.png";
 
 const CrtScreen = () => {
     return (
         <div className="crtScreen">
-        <div className="crtScreen__content">
+        <div className="crtScreen-content">
             <div className="crtScreen__content--text">
-            <h1>Jeff</h1>
-            <p>Jeff is a cool guy</p>
+            <h1>This is Tristan</h1>
+            <p>Tristan is a cool guy, you should hire him!</p>
             </div>
-            <div className="crtScreen__content--image">
-            {/* <img src={jeff} alt="jeff" /> */}
+            <div className="crtScreen-image">
+            <img id="my-face" src={face} alt="My stupid face" />
             </div>
         </div>
         </div>
