@@ -156,7 +156,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(18, 16, 16, 0.1);
+    background: rgba(72, 88, 77, 0.1);
     opacity: 0;
     z-index: 2;
     pointer-events: none;
@@ -181,7 +181,7 @@
     /* box-shadow: inset 0px 2px 2px 5px rgba(255, 255, 255, 0.274); */
   }
   .crtScreen {
-    animation: textShadow 0.1s infinite;
+    animation: textShadow 0.05s infinite;
     width: 80%;
     height: 80%;
     display: flex;

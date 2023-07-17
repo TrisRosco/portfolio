@@ -32,12 +32,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-          <CrtOuter />
-          <div className="pc-tower">
-          <ToggleSwitch isNVGOn={isNVGOn} nvgMode={nvgMode} />
-          <button id="welcome-button" onClick={playWelcome}> Click me </button>
 
-          </div>
       </header>
     </div>
   );
