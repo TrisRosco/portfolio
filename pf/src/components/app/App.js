@@ -1,5 +1,7 @@
 import "./App.css";
 import { useEffect, useState } from "react";
+import NavBar from "../navBar";
+
 function App() {
 
   useEffect(() => {
@@ -9,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <NavBar />
         <p>Hey</p>
       </header>
     </div>
