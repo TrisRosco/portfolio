@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <NavBar />
+        <NavBar className="nav-bar" />
         <p>Hey</p>
       </header>
     </div>

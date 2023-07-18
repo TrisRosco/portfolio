@@ -11,14 +11,20 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+
   }
   
-  li {
-    float: left;
-  }
-  
+
   li a {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
     color: white;
     text-align: center;
     padding: 14px 16px;
