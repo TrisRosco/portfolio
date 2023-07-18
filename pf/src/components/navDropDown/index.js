@@ -1,38 +1,80 @@
-import React, { useState } from "react";
+import React from "react";
+import { motion } from "framer-motion";
 import "./styles.css";
-import { useAnimate, stagger, motion } from "framer-motion";
 
 const NavDropDown = (props) => {
   return (
-    <div className="nav-drop-down">
+    <div className="nav-drop-down" style={{ zIndex: props.zIndex }}>
       {props.dropDownOpen && (
         <motion.div
           initial="hidden"
-          animate="visible"
-          exit="hidden"
+          animate="open"
+          exit="close"
           variants={{
-            hidden: { opacity: 0, y: -100 },
-            visible: {
-              opacity: 1,
-              y: 0,
-              transition: { delay: 0.2, type: "spring", stiffness: 900 },
+            hidden: { y: -300 },
+            open: {
+              y: -32,
+              transition: {
+                type: "spring",
+                stiffness: 700,
+                damping: 30,
+              },
+            },
+            close: {
+              y: -300,
+              transition: {
+                type: "spring",
+                stiffness: 700,
+                damping: 30,
+              },
             },
           }}
           className="drop-down"
         >
-          <motion.div className="drop-down-item">
+          <motion.div className="drop-down-spacer">
+            <p></p>
+          </motion.div>
+          <motion.div className="drop-down-spacer">
+            <p></p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="drop-down-item"
+          >
             <p>HonK</p>
           </motion.div>
-          <motion.div className="drop-down-item">
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="drop-down-item"
+          >
             <p>LITTR</p>
           </motion.div>
-          <motion.div className="drop-down-item">
+          <motion.div
+            initial={{ blur: 1, opacity: 0, y: -10 }}
+            animate={{ blur: 0, opacity: 1, y: 0 }}
+            transition={{ delay: 0.6 }}
+            className="drop-down-item"
+          >
             <p>Something else</p>
           </motion.div>
-          <motion.div className="drop-down-item">
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8 }}
+            className="drop-down-item"
+          >
             <p>Another thing</p>
           </motion.div>
-          <motion.div className="drop-down-item">
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1 }}
+            className="drop-down-item"
+          >
             <p>Jeff</p>
           </motion.div>
         </motion.div>

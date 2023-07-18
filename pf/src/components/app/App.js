@@ -17,9 +17,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <NavBar className="nav-bar" projectClick={toggleDropDown} />
-        <NavDropDown className="nav-drop-down" dropDownOpen={dropDownState}   />
-        <p>Hey</p>
+        <NavBar className="nav-bar" projectClick={toggleDropDown} zIndex="2" />
+        <NavDropDown className="nav-drop-down" dropDownOpen={dropDownState} zIndex="1" />
       </header>
     </div>
   );
