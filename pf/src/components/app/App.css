@@ -26,32 +26,4 @@
     {text-shadow: 0.06ex 0 #a50610, -0.06ex 0 #0c2aa8, 0 0.14ex 0 rgba(0,0,0,.8), 0.12ex 0 0 rgba(0,0,0,.8) }
 }
 
-.pc-tower {
-  width: 700px;
-  height: 200px;
-  background-color: blanchedalmond;
-  border-radius: 10px;
-  border: none;
-  box-shadow: inset 0 0 10px 10px #0000001f, 0 0 10px 10px #0000001f;
-}
 
-#welcome-button {
-  width: 80px;
-  height: 30px;
-  border-radius: 5px;
-  border: none;
-  background-color: rgb(184, 156, 115);
-  box-shadow: 2px 2px 0px #000000;
-  color: rgb(223, 191, 145);
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
-  text-shadow: -1px -1px rgba(0,0,0,0.5), 1px 1px 
-}
-
-#welcome-button:active {
-  transition: 0.2s;
-  box-shadow: none;
-  transform: translateY(2px);
-  text-shadow: -1px -1px rgba(0,0,0,0.5), 1px 1px 
-}
