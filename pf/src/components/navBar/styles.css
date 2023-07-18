@@ -1,11 +1,10 @@
 .nav-bar{
     width: 100vw;
-    background-color: azure;
     display: flex;
-    justify-content: space-between
+
 }
 
-ul {
+.nav-bar-list{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -15,22 +14,30 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     width: 100vw;
-
   }
   
-
-  li a {
+.nav-bar-list-button {
+    width: 100%;
+    height: 40px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
-    color: white;
     text-align: center;
     padding: 14px 16px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
     text-decoration: none;
   }
   
-  li a:hover {
+  .nav-bar-list-button:hover {
     background-color: #111;
+    transition: 0.5s;
+  }
+
+  .projects-list {
+    display: flex;
+    flex-direction: column;
   }
