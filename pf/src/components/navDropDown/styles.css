@@ -18,4 +18,12 @@
 
 .drop-down-item:hover{
     background-color: #333;
+    transition: 0.5s;
+}
+
+.drop-down-item:active{
+    background-color: #333;
+    transition: 0.1s;
+    width: 80%;
+    border-radius: 5px 5px 5px 5px
 }
