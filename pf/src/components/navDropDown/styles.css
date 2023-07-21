@@ -7,6 +7,8 @@
     user-select: none;
     text-decoration: none;
     color: lightcyan;
+    z-index: 90;
+
 }
 
 .drop-down {
@@ -20,6 +22,9 @@
     user-select: none;
     text-decoration: none;
     color: lightcyan;
+    position: absolute;
+    padding-top: 300px;
+
 }
 
 .drop-down-item{

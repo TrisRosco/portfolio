@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const NavDropDown = (props) => {
   return (
-    <div className="nav-drop-down" style={{ zIndex: props.zIndex }}>
+    <div className="nav-drop-down">
       {props.dropDownOpen && (
         <motion.div
           initial="hidden"

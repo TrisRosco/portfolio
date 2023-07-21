@@ -5,33 +5,32 @@ import CrtOuter from '../../components/crtOuter';
 import { useState, useEffect } from 'react';
 
 const CRT = () => {
+  const [dropDownState, setDropDownState] = useState(false);
+  const [isCrtVisible, setIsCrtVisible] = useState(false);
 
-    const [dropDownState, setDropDownState] = useState(false);
+  const toggleDropDown = () => {
+    setDropDownState(!dropDownState);
+  }
 
-    const toggleDropDown = () => {
-        setDropDownState(!dropDownState);
-    }
+  useEffect(() => {
+    console.log("CRT loaded");
 
-    useEffect(() => {
-        console.log("CRT loaded");
-    }, []);
+    // When the component has loaded, set the "isCrtVisible" state to true,
+    // which will trigger the fade-in effect through the CSS class
+    setIsCrtVisible(true);
+  }, []);
 
-
-    return (
-        <div className="crt">
-            <header className="crt-header">
-                <NavBar className="nav-bar" projectClick={toggleDropDown} zIndex="5" />
-                <NavDropDown className="nav-drop-down" dropDownOpen={dropDownState} zIndex="1" />
-            </header>
-            <div className="crt-container">
-            <CrtOuter />
-            </div>
-        </div>
-    );
+  return (
+    <div className="crt">
+      <header className="crt-header">
+        <NavBar  projectClick={toggleDropDown}/>
+        <NavDropDown  dropDownOpen={dropDownState} />
+      </header>
+      <div className={`crt-container ${isCrtVisible ? 'fade-in' : ''}`}>
+        <CrtOuter />
+      </div>
+    </div>
+  );
 }
 
 export default CRT;
-
-
-       
-

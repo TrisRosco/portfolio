@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const NavBar = (props) => {
   return (
-    <nav className="nav-bar" style={{ zIndex: props.zIndex }}>
+    <nav className="nav-bar" style={{ zIndex: 1000 }}>
       <ul className="nav-bar-list">
         <motion.li className="nav-bar-list-button">
           <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
