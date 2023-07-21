@@ -3,7 +3,6 @@ import NavBar from "../../components/navBar";
 import NavDropDown from "../../components/navDropDown";
 import "./styles.css";
 
-
 function About() {
     const [dropDownState, setDropDownState] = useState(false);
   
@@ -12,7 +11,7 @@ function About() {
     };
   
     useEffect(() => {
-      console.log("App loaded");
+      console.log("About loaded");
     }, []);
   
     return (

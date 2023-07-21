@@ -1,8 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./styles.css";
+import { Link } from "react-router-dom";
 
 const NavDropDown = (props) => {
+
   return (
     <div className="nav-drop-down" style={{ zIndex: props.zIndex }}>
       {props.dropDownOpen && (
@@ -59,7 +61,12 @@ const NavDropDown = (props) => {
             transition={{ delay: 0.4 }}
             className="drop-down-item"
           >
-            <p>Something else</p>
+            <Link to="/crt"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <p>CRT</p>
+            </Link>
+
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -68,6 +75,7 @@ const NavDropDown = (props) => {
             className="drop-down-item"
           >
             <p>Another thing</p>
+
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: -10 }}
