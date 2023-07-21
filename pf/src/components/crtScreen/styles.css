@@ -187,7 +187,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    color: beige;
   }
 
   .crtScreen-content {
@@ -195,6 +195,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: "VT323", monospace;
   }
 
   .crtScreen-image {

@@ -27,7 +27,7 @@ const Contact = () => {
                     <p>Phone: 1-800-555-5555</p>
                 </div>
                 <div className="contact-content-item">
-                    <p>Email:
+                    <p>Email: 
 
                     </p>
                 </div>

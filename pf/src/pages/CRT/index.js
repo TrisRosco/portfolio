@@ -23,7 +23,9 @@ const CRT = () => {
                 <NavBar className="nav-bar" projectClick={toggleDropDown} zIndex="5" />
                 <NavDropDown className="nav-drop-down" dropDownOpen={dropDownState} zIndex="1" />
             </header>
+            <div className="crt-container">
             <CrtOuter />
+            </div>
         </div>
     );
 }
