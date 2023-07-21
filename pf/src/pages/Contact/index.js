@@ -19,8 +19,8 @@ const Contact = () => {
     return (
         <div className="contact-container"> 
             <header className="contact-header">
-                <NavBar  projectClick={toggleDropDown} zIndex="100" />
-                <NavDropDown  dropDownOpen={dropDownState} zIndex="99" />
+                <NavBar  projectClick={toggleDropDown} />
+                <NavDropDown  dropDownOpen={dropDownState} />
             </header>
             <div className="contact-content">
                 <div className="contact-content-item">

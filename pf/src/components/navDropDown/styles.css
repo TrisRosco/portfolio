@@ -8,10 +8,11 @@
     text-decoration: none;
     color: lightcyan;
     z-index: 90;
-
+    position: absolute;
 }
 
 .drop-down {
+    height : 100%;
     width: 33vw;
     display: flex;
     flex-direction: column;
@@ -22,9 +23,7 @@
     user-select: none;
     text-decoration: none;
     color: lightcyan;
-    position: absolute;
-    padding-top: 300px;
-
+    margin-top: 20px;
 }
 
 .drop-down-item{

@@ -27,7 +27,7 @@ const CRT = () => {
         <NavDropDown  dropDownOpen={dropDownState} />
       </header>
       <div className={`crt-container ${isCrtVisible ? 'fade-in' : ''}`}>
-        <CrtOuter />
+        <CrtOuter id={`crt-screen`} />
       </div>
     </div>
   );

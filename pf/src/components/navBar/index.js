@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./styles.css";
-import { useAnimate, stagger, motion, transform } from "framer-motion";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const NavBar = (props) => {
   return (
-    <nav className="nav-bar" style={{ zIndex: 1000 }}>
+    <nav className="nav-bar" >
       <ul className="nav-bar-list">
         <motion.li className="nav-bar-list-button">
           <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>

@@ -8,13 +8,16 @@ const LITTR = () => {
   const toggleDropDown = () => {
     setDropDownState(!dropDownState);
   };
+
+  useEffect(() => {
+    console.log("LITTR loaded");
+  }, []);
   return (
     <div className="littr">
       <header className="littr-header">
-        <NavBar projectClick={toggleDropDown} zIndex="2" />
-        <NavDropDown dropDownOpen={dropDownState} zIndex="1" />
+        <NavBar projectClick={toggleDropDown} />
+        <NavDropDown dropDownOpen={dropDownState} />
       </header>
-      {/* Wrap the nested content within a single div */}
       <div className="littr-container">
         <header className="littr-title">
           <h1>LITTR</h1>
@@ -49,7 +52,7 @@ const LITTR = () => {
           <div className="littr-tech-item">
             <h2>Tech</h2>
           </div>
-          <div className="littr-tech-item">   
+          <div className="littr-tech-item">
             <p>
               <ul>
                 <li>React</li>

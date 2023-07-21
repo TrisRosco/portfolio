@@ -11,6 +11,7 @@ const NavDropDown = (props) => {
           initial="hidden"
           animate="open"
           exit="close"
+          zIndex="100"
           variants={{
             hidden: { y: -300 },
             open: {
@@ -32,12 +33,7 @@ const NavDropDown = (props) => {
           }}
           className="drop-down"
         >
-          <motion.div className="drop-down-spacer">
-            <p></p>
-          </motion.div>
-          <motion.div className="drop-down-spacer">
-            <p></p>
-          </motion.div>
+
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}

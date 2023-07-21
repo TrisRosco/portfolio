@@ -17,8 +17,8 @@ function About() {
     return (
       <div className="about">
         <header className="about-header">
-          <NavBar projectClick={toggleDropDown} zIndex="2" />
-          <NavDropDown  dropDownOpen={dropDownState} zIndex="1" />
+          <NavBar projectClick={toggleDropDown}  />
+          <NavDropDown  dropDownOpen={dropDownState} />
         </header>
       </div>
     );
