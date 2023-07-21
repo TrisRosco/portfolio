@@ -40,7 +40,7 @@ const NavDropDown = (props) => {
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
+            transition={{ delay: 0.2 }}
             className="drop-down-item"
           >
             <p>HonK</p>
@@ -48,7 +48,7 @@ const NavDropDown = (props) => {
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
+            transition={{ delay: 0.3 }}
             className="drop-down-item"
           >
             <p>LITTR</p>
@@ -56,7 +56,7 @@ const NavDropDown = (props) => {
           <motion.div
             initial={{ blur: 1, opacity: 0, y: -10 }}
             animate={{ blur: 0, opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
+            transition={{ delay: 0.4 }}
             className="drop-down-item"
           >
             <p>Something else</p>
@@ -64,7 +64,7 @@ const NavDropDown = (props) => {
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6 }}
+            transition={{ delay: 0.5 }}
             className="drop-down-item"
           >
             <p>Another thing</p>
@@ -72,7 +72,7 @@ const NavDropDown = (props) => {
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7 }}
+            transition={{ delay: 0.6 }}
             className="drop-down-item"
           >
             <p>Jeff</p>
