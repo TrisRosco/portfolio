@@ -13,6 +13,9 @@ const CrtScreen = () => {
             <div className="crtScreen-image">
             <img id="my-face" src={face} alt="My stupid face" />
             </div>
+            <div id="screen-button-container">
+            <button id="hire-me-button">Hire Me!</button>
+            </div>
         </div>
         </div>
     );
