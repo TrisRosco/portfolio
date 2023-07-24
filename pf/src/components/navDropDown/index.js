@@ -51,6 +51,7 @@ const NavDropDown = (props) => {
             <Link
               to="/littr"
               style={{ textDecoration: "none", color: "inherit" }}
+              className="drop-down-item"
             >
               <p>LITTR</p>
             </Link>
@@ -64,6 +65,7 @@ const NavDropDown = (props) => {
             <Link
               to="/crt"
               style={{ textDecoration: "none", color: "inherit" }}
+              className="drop-down-item"
             >
               <p>CRT</p>
             </Link>

@@ -6,7 +6,7 @@ import NavDropDown from "../navDropDown";
 
 const NavBar = (props) => {
   const [dropDownState, setDropDownState] = useState(false);
-  
+
   const toggleDropDown = () => {
     setDropDownState(!dropDownState);
   };
@@ -15,7 +15,11 @@ const NavBar = (props) => {
     <nav className="nav-bar">
       <ul className="nav-bar-list">
         <motion.li className="nav-bar-list-button">
-          <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+          <Link
+            className="nav-bar-list-button"
+            to="/"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
             About
           </Link>
         </motion.li>
@@ -24,6 +28,7 @@ const NavBar = (props) => {
         </motion.li>
         <motion.li className="nav-bar-list-button">
           <Link
+            className="nav-bar-list-button"
             to="/contact"
             style={{ textDecoration: "none", color: "inherit" }}
           >
@@ -31,7 +36,7 @@ const NavBar = (props) => {
           </Link>
         </motion.li>
       </ul>
-      <NavDropDown dropDownOpen={dropDownState}/>
+      <NavDropDown dropDownOpen={dropDownState} />
     </nav>
   );
 };
