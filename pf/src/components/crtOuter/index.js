@@ -19,7 +19,7 @@ const CrtOuter = () => {
         <div className="button-container">
         <button className="control-button" onClick={playGreeting}>Power</button>
         <button className="control-button">Reset</button>
-        <button className="control-button">Eject</button>
+        <button className="control-button">Info</button>
         <button className="control-button">Vol</button>
         </div>
         </div>
