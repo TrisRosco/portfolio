@@ -47,7 +47,7 @@ height: 40px;
 
 .drop-down-item:hover{
     background-color: #333;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .drop-down-item:active{

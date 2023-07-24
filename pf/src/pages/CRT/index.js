@@ -8,7 +8,6 @@ const CRT = () => {
 
   useEffect(() => {
     console.log("CRT loaded");
-
     // When the component has loaded, set the "isCrtVisible" state to true,
     // which will trigger the fade-in effect through the CSS class
     setIsCrtVisible(true);
@@ -19,7 +18,7 @@ const CRT = () => {
       <header className="crt-header">
         <NavBar />
       </header>
-      <div className={`crt-container ${isCrtVisible ? "fade-in" : ""}`}>
+      <div className={`crt-container ${isCrtVisible ? "fade-in" : ""}`}> 
         <CrtOuter id={`crt-screen`} />
       </div>
     </div>
