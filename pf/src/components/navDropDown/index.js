@@ -33,7 +33,7 @@ const NavDropDown = (props) => {
           }}
           className="drop-down"
         >
-
+        <motion.div className="drop-down-spacer"></motion.div>
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}

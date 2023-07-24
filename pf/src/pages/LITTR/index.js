@@ -1,22 +1,16 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import "./styles.css";
 import NavBar from "../../components/navBar";
-import NavDropDown from "../../components/navDropDown";
 
 const LITTR = () => {
-  const [dropDownState, setDropDownState] = useState(false);
-  const toggleDropDown = () => {
-    setDropDownState(!dropDownState);
-  };
-
   useEffect(() => {
     console.log("LITTR loaded");
   }, []);
   return (
     <div className="littr">
       <header className="littr-header">
-        <NavBar projectClick={toggleDropDown} />
-        <NavDropDown dropDownOpen={dropDownState} />
+        <NavBar  />
+
       </header>
       <div className="littr-container">
         <header className="littr-title">

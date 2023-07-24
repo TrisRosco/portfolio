@@ -1,18 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./styles.css";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import NavDropDown from "../navDropDown";
 
 const NavBar = (props) => {
+  const [dropDownState, setDropDownState] = useState(false);
+  
+  const toggleDropDown = () => {
+    setDropDownState(!dropDownState);
+  };
+
   return (
-    <nav className="nav-bar" >
+    <nav className="nav-bar">
       <ul className="nav-bar-list">
         <motion.li className="nav-bar-list-button">
           <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
             About
           </Link>
         </motion.li>
-        <motion.li className="nav-bar-list-button" onClick={props.projectClick}>
+        <motion.li className="nav-bar-list-button" onClick={toggleDropDown}>
           <p>Projects</p>
         </motion.li>
         <motion.li className="nav-bar-list-button">
@@ -24,6 +31,7 @@ const NavBar = (props) => {
           </Link>
         </motion.li>
       </ul>
+      <NavDropDown dropDownOpen={dropDownState}/>
     </nav>
   );
 };

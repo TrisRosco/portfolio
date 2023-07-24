@@ -1,13 +1,13 @@
 .nav-drop-down {
     width: 100%;
+    margin-top: -10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     user-select: none;
     text-decoration: none;
     color: lightcyan;
-    z-index: 90;
+    z-index: 9000;
     position: absolute;
 }
 
@@ -23,7 +23,8 @@
     user-select: none;
     text-decoration: none;
     color: lightcyan;
-    margin-top: 20px;
+    margin-top: 100px;
+    z-index: 9000;
 }
 
 .drop-down-item{
@@ -37,6 +38,11 @@
     user-select: none;
     text-decoration: none;
     color: lightcyan;
+    z-index: 9000;
+}
+
+.drop-down-spacer{
+height: 20px;
 }
 
 .drop-down-item:hover{
