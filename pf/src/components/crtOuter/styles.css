@@ -6,8 +6,10 @@
     height: 700px;
     background-color: bisque;
     border-radius: 25px;
-    box-shadow: inset -3px -3px 5px 8px #0000001f, 18px 18px 10px 10px #0000001f, 6px 6px blanchedalmond, 8px 8px blanchedalmond, 10px 10px blanchedalmond, 12px 12px blanchedalmond, 13px 13px bisque, 14px 14px bisque, 15px 15px bisque;
+    box-shadow: inset -3px -3px 4px 8px #0000001f, 18px 18px 10px 10px #0000001f, 5px 2px blanchedalmond, 8px 3px blanchedalmond, 9px 4px blanchedalmond, 10px 5px blanchedalmond, 11px 6px blanchedalmond, 12px 7px blanchedalmond, 13px 8px bisque, 14px 9px bisque, 15px 10px bisque;
     border: none;
+    padding-bottom: 60px;
+    
 }
 
 .plastic-casing-inner{
@@ -15,10 +17,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 600px;
-    height: 600px;
+    width: 580px;
+    height: 580px;
     background-color: #282c34;
     border-radius: 10px;
     border: none;
+    box-shadow: -1px -1px 4px 6px #0000001f;
 
 }
