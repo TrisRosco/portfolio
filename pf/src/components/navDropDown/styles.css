@@ -23,7 +23,7 @@
     user-select: none;
     text-decoration: none;
     color: lightcyan;
-    margin-top: 100px;
+    margin-top: 70px;
     z-index: 9000;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .drop-down-spacer{
-height: 20px;
+height: 40px;
 }
 
 .drop-down-item:hover{
