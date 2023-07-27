@@ -14,7 +14,14 @@
     justify-content: flex-start;
   }
   
-  
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}  
+
   @keyframes chromAbb {
     0%
       {text-shadow: 0 0 #a50610, 0 0 #0c2aa8, 0 6px 0 transparent, 8px 0 0 transparent}

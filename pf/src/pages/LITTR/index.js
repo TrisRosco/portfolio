@@ -18,11 +18,15 @@ const LITTR = () => {
         </header>
         <div className="littr-description">
           <p>
-            LITTR is a social media platform that allows users to post and view
-            content from other users. Users can create an account, post content,
-            and view content from other users. Users can also follow other users
-            and view their content in a feed. Users can also like and comment on
-            posts.
+            LITTR is a lightweight social media platform that allows users to
+            to organise and volunteer for litter cleanups in their local area. 
+            <br />
+            The app is designed to be simple and easy to use, with a focus on 
+            usability and accessibility. It was built as a mobile-first app,
+            with a responsive design that scales to fit any screen size.
+            <br />
+            In its current state, the app is in its MVP stage, with the core
+            functionality implemented. The current features are:
           </p>
         </div>
         <div className="littr-features">
@@ -32,12 +36,14 @@ const LITTR = () => {
           <div className="littr-features-item">
             <p>
               <ul>
-                <li>Users can create an account</li>
-                <li>Users can post content</li>
-                <li>Users can view content from other users</li>
-                <li>Users can follow other users</li>
-                <li>Users can view content from users they follow</li>
-                <li>Users can like and comment on posts</li>
+                <li>Sign up and login</li>
+                <li>A fully functional map using Google maps</li>
+                <li>View and create litter clean-up events</li>
+                <li>The ability to volunteer for said events</li>
+                <li>A functional like button</li>
+                <li>A search bar to filter events by location</li>
+                <li>An integrated back-end using SupaBase</li>
+                <li></li>
               </ul>
             </p>
           </div>
