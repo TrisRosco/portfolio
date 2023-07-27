@@ -4,6 +4,7 @@ import face from "../../assets/images/faceLQ.png";
 
 const CrtScreen = (props) => {
   const [isSelected, setIsSelected] = useState(props.isSelected);
+  const [isOff, setIsOff] = useState(props.isOff);
 
   const altContent = (
     <div className="crtScreen-content-text">
@@ -69,8 +70,13 @@ const CrtScreen = (props) => {
     setIsSelected(props.isSelected);
   }, [props.isSelected]);
 
+  useEffect(() => {
+    setIsOff(props.isOff);
+  }, [props.isOff]);
+  
+
   return (
-    <div className="crtScreen">
+    <div className={isOff ? "crtScreen-off" : "crtScreen"}>
       <div className="crtScreen-content">
         {isSelected ? altContent : defaultContent}
       </div>

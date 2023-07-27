@@ -64,6 +64,7 @@
   }
 }
 
+
 @keyframes textShadow {
   0% {
     text-shadow: 0.38px 0 1px rgba(0, 30, 255, 0.5), -0.38px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
@@ -217,6 +218,19 @@
     justify-content: center;
     align-items: center;
     color: beige;
+  }
+
+  .crtScreen-off {
+    filter: blur(3px);
+    transition: all 0.3s;
+    animation: textShadow 0.05s infinite;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    opacity: 0;
   }
 
   .crtScreen-content {

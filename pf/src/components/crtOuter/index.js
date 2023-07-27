@@ -9,6 +9,7 @@ import buttonUp from "../../assets/sounds/buttonUp.mp3";
 const CrtOuter = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isSelected, setIsSelected] = useState(false);
+  const [isOff, setIsOff] = useState(false);
   const audioRef = useRef(null);
 
   const playGreeting = () => {
@@ -42,16 +43,21 @@ const CrtOuter = () => {
     setIsSelected(!isSelected);
   };
 
+  const togglePower = () => {
+    setIsOff(!isOff);
+  };
+
   return (
     <div className="plastic-casing-outer">
       <div className="plastic-casing-inner">
-        <CrtScreen isSelected={isSelected} />
+        <CrtScreen isSelected={isSelected} isOff={isOff} />
       </div>
       <div className="button-container">
         <button
           className="control-button"
           onMouseDown={playButtonDown}
           onMouseUp={playButtonUp}
+          onClick={togglePower}
         >
           Power
         </button>
