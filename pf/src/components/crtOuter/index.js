@@ -20,6 +20,7 @@ const CrtOuter = () => {
       setIsPlaying(false);
     } else {
       audio.play();
+      audio.loop = true;
       setIsPlaying(true);
     }
   };

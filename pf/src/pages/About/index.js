@@ -29,17 +29,26 @@ function About() {
               He's also a full stack developer with experience in React, Node,
               Express, PostgreSQL, and so much more!
             </p>
-
             <p>Hire now! Call us at 1-800-TRISTAN</p>
             <p>Shareware version also avaliable</p>
-
             <p>
-              <a href="https://www.linkedin.com/in/tristan-roscorla">
+              <a
+                href="https://www.linkedin.com/in/tristan-roscorla"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {/* The noopner noreferrer thingy is to prevent a security vulnerability */}
                 LinkedIn
               </a>
             </p>
             <p>
-              <a href="https://www.github.com/trisrosco">GitHub</a>
+              <a
+                href="https://www.github.com/trisrosco"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
             </p>
           </div>
         </div>
