@@ -8,10 +8,16 @@ const CrtScreen = (props) => {
   // Define the placeholder text to be displayed when isSelected is true
   const altContent = (
     <div className="crtScreen-content-text">
-      <h1>Placeholder Text</h1>
-      <p>Replace this text</p>
+      <h2>How I made this silly thing:</h2>
+      <p>Originally made as my actual portfolio site, I decided to make it a separate project.</p>
+      <p>The theme is inspired by those old CRT monitors that used to be everywhere. I wanted to make something that looked like a modern idea, but made in the early 90s (like me).</p>
+      <p>Everything you see is CSS. The "3D" effect is achieved by using a combination of stacked box-shadows.</p>
+      <p>The pixelated CRT aesthetic is achieved by using a repeating linear gradient, and the flicker is an animation that rapidly changes the opacity of the entire div.</p>
+      <p>The chromatic aberration is similar to the flicker, but instead of changing opacity, it rapidly changes the pixel width of two coloured text shadows.</p>
+      <p>It was important for the flicker and chromatic aberration to be in sync, so each of them consists of 20 keyframes, and the animation is set to 0.5s.</p>
     </div>
   );
+  
 
   // Define the current content to be displayed when isSelected is false
   const defaultContent = (
@@ -30,25 +36,25 @@ const CrtScreen = (props) => {
         He's also a full stack developer with experience in React, Node,
         Express, PostgreSQL, and so much more!
       </p>
-    </div>
-  );
-
-  // Update isSelected state when the prop value changes
-  useEffect(() => {
-    setIsSelected(props.isSelected);
-  }, [props.isSelected]);
-
-  return (
-    <div className="crtScreen">
-      <div className="crtScreen-content">
-        {isSelected ? altContent : defaultContent}
-        <div className="crtScreen-image">
+      <div className="crtScreen-image">
           <img id="my-face" src={face} alt="My stupid face" />
         </div>
         <div className="crtScreen-content-text">
           <p>Hire now! Call us at 1-800-TRISTAN</p>
           <p>Shareware version also available</p>
         </div>
+    </div>
+
+  );
+
+  // Update isSelected state when the prop value changes
+  useEffect(() => {
+    setIsSelected(props.isSelected);
+  }, [props.isSelected]);
+  return (
+    <div className="crtScreen">
+      <div className="crtScreen-content">
+        {isSelected ? altContent : defaultContent}
       </div>
     </div>
   );
