@@ -15,8 +15,14 @@ function About() {
       <div className="about-container">
         <div className="about-content">
           <div className="about-content-text">
-            <h1>This is Tristan</h1>
-            <p>Tristan is a cool guy, you should hire him!</p>
+            <h1 id="hey">
+              Hey,
+              <br /> I'm <span className="my-name">Tristan!</span>
+            </h1>
+            <p>
+              I'm a full stack developer with experience in React, Node,
+              Express, PostgreSQL, and so much more!
+            </p>
             <p>
               Features: <br />
               - Quick learner <br />
