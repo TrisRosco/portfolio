@@ -10,17 +10,19 @@ const CrtScreen = () => {
           <h1>This is Tristan</h1>
           <p>Tristan is a cool guy, you should hire him!</p>
           <p>
-            He's a full stack web developer with a passion for learning and
-            creating.
+            Features: <br />
+            - Quick learner <br />
+            - Hard worker <br />
+            - Creative thinker and problem solver <br />
+            - Team player <br />
+            - Great sense of humor <br />
           </p>
           <p>
-            He's paints little miniatures and plays video games in his free
-            time.
+            He's also a full stack developer with experience in React, Node,
+            Express, PostgreSQL, and so much more!
           </p>
-          <p>
-            It seems like he also enjoys making silly fake 80s tablet PCs with
-            CSS.
-          </p>
+
+
         </div>
         <div className="crtScreen-image">
           <img id="my-face" src={face} alt="My stupid face" />
