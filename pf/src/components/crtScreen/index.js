@@ -15,7 +15,7 @@ const CrtScreen = () => {
             - Hard worker <br />
             - Creative thinker and problem solver <br />
             - Team player <br />
-            - Great sense of humor <br />
+            - Great sense of humour <br />
           </p>
           <p>
             He's also a full stack developer with experience in React, Node,
