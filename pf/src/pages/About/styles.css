@@ -5,13 +5,22 @@
   align-items: center;
   justify-content: flex-start;
 }
+
   
 .about{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url("../../assets/images/aboutBG.png");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
 }  
+
+.about-container {
+  height: 100vh;
+}
 
 #link-container{
   display: flex;
