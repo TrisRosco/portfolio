@@ -20,6 +20,22 @@ function About() {
               Hey!
               <br /> I'm <span className="my-name">Tristan!</span>
             </h1>
+
+            <p>
+              I'm a Junior Software Engineer based in the UK. I'm passionate
+              about creating beautiful, intuitive, and performant user
+              experiences.
+            </p>
+            <p>
+              I'm a big fan of all things Tech, and I'm always looking for new
+              things to learn. I'm currently working on a few projects, which
+              you can check out on my GitHub.
+              
+            </p>
+            <p>
+              I'm always looking for new opportunities to learn and grow. If
+              you'd like to get in touch, feel free to reach out!
+            </p>
             <div id="link-container">
             <p>
               <a
@@ -44,22 +60,6 @@ function About() {
               </a>
             </p>
             </div>
-            <p>
-              I'm a Junior Software Engineer based in the UK. I'm passionate
-              about creating beautiful, intuitive, and performant user
-              experiences.
-            </p>
-            <p>
-              I'm a big fan of all things Tech, and I'm always looking for new
-              things to learn. I'm currently working on a few projects, which
-              you can check out on my GitHub.
-              
-            </p>
-            <p>
-              I'm always looking for new opportunities to learn and grow. If
-              you'd like to get in touch, feel free to reach out!
-            </p>
-
           </div>
         </div>
       </div>
