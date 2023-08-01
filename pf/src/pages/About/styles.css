@@ -1,11 +1,4 @@
 .about-header {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-  
-.about-header {
   color: lightcyan;
   display: flex;
   flex-direction: column;
@@ -20,9 +13,27 @@
   justify-content: center;
 }  
 
-.my-name{
+#link-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#hey {
   font-weight: lighter;
-  
+  font-size: 2.5em;
+}
+
+#linkedin-github{
+  text-decoration: none;
+  color: #FFBD59;
+}
+
+.my-name{
+  font-weight: bold;
+  color: #FFBD59;
 }
 
 @keyframes chromAbb {
