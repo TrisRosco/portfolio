@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "./styles.css";
 import NavBar from "../../components/navBar";
-import YouTubeFrame from "../../components/youtubeFrame";
 
 const LITTR = () => {
   useEffect(() => {
