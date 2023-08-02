@@ -75,10 +75,10 @@ const LITTR = () => {
             <p>
               <ul>
                 <li>
-                  <a href="#">GitHub</a>
+                  <a href="https://github.com/TrisRosco">GitHub</a>
                 </li>
                 <li>
-                  <a href="#">Live Demo</a>
+                  <a href="https://www.youtube.com/watch?v=lREoUPpGUWg">Live Demo</a>
                 </li>
               </ul>
             </p>
