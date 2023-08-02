@@ -20,7 +20,7 @@ const LITTR = () => {
           <p>
             <span className="littr-highlight">LITTR</span> is a lightweight
             social media platform that allows users to organize and volunteer
-            for litter cleanups in their local area.
+            for litter cleanups in their local area. Built in 4 weeks.
             <br />
             The app is designed to be simple and easy to use, with a focus on
             usability and accessibility. It was built as a mobile-first app,
@@ -28,6 +28,59 @@ const LITTR = () => {
             <br />
             In its current state, the app is in its MVP stage, with the core
             functionality implemented. The current features are:
+          </p>
+          <p>
+            This project was built in collaboration with 5 other developers as a
+            final project for the{" "}
+            <a
+              href="https://www.schoolofcode.co.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="littr-link"
+            >
+              School of Code
+            </a>{" "}
+            Full Stack Web Development course.
+          </p>
+          <p>
+            {" "}
+            My contributions to this project were mostly on the front-end. The
+            general aesthetic of the app was my design, and I'm resonsible for
+            the majority of the CSS.
+            <br />
+            The cards on the{" "}
+            <a
+              href="https://littr.netlify.app/src/pages/carddisplay"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="littr-link"
+            >
+              main page
+            </a>{" "}
+            were built by me. Initially, they were entirely JS and CSS, but they
+            were later rebuilt using MUI as a means of standardizing the design.
+            <br />
+            <img
+              src="https://i.pinimg.com/originals/4c/a3/1e/4ca31e5343e89bc550044caec29543e6.jpg"
+              alt=""
+            />
+          </p>
+          <p>
+            The{" "}
+            <a
+              href="https://littr.netlify.app/src/pages/createpostform"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="littr-link"
+            >
+              post creation
+            </a>{" "}
+            page was also built by me. It's designed to be able to be used by a
+            broad userbase, with a focus on accessibility.
+            <br />
+            There are a number of built-in checks to ensure anything that's
+            posted is appropriate. For example the Postcode field is checked
+            against a regex to ensure it's a valid UK postcode.
           </p>
         </div>
         <div className="littr-list-container">
@@ -50,27 +103,81 @@ const LITTR = () => {
               </ul>
             </div>
           </div>
-
           <div className="littr-tech">
             <div className="littr-tech-item">
               <h2 className="littr-subtitle">Tech</h2>
             </div>
             <div className="littr-tech-item">
               <ul>
-                <li>React <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React"/></li>
-                <li>Node.js <img src="https://img.icons8.com/?size=512&id=hsPbhkOH4FMe&format=png" alt="Node.js"/></li>
-                <li>Express<img src="https://img.icons8.com/?size=512&id=WNoJgbzDr3i2&format=png" alt="Express.js"/></li>
-                <li>SupaBase <img src="https://supabase.com/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F54469796&w=1920&q=75" alt="Supabase"/></li>
-                <li>PostgreSQL <img src="https://img.icons8.com/?size=512&id=38561&format=png" alt="PostgreSql"/></li>
-                <li>HTML <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML5"/></li>
-                <li>CSS <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3"/></li>
-                <li>JavaScript <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" alt="Javascript"/></li>
-                <li>Jest <img src="https://img.icons8.com/?size=512&id=bp24DwGXJDyT&format=png" alt="Jest"/></li>
+                <li>
+                  <img
+                    src="https://img.icons8.com/color/48/000000/react-native.png"
+                    alt="React"
+                  />{" "}
+                  React
+                </li>
+                <li>
+                  <img
+                    src="https://img.icons8.com/?size=512&id=hsPbhkOH4FMe&format=png"
+                    alt="Node.js"
+                  />{" "}
+                  Node.js
+                </li>
+                <li>
+                  <img
+                    src="https://img.icons8.com/?size=512&id=WNoJgbzDr3i2&format=png"
+                    alt="Express.js"
+                  />{" "}
+                  Express.js
+                </li>
+                <li>
+                  <img
+                    src="https://supabase.com/_next/image?url=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F54469796&w=1920&q=75"
+                    alt="Supabase"
+                  />{" "}
+                  Supabase
+                </li>
+                <li>
+                  <img
+                    src="https://img.icons8.com/?size=512&id=38561&format=png"
+                    alt="PostgreSql"
+                  />{" "}
+                  PostgreSql
+                </li>
+                <li>
+                  <img
+                    src="https://img.icons8.com/color/48/000000/html-5--v1.png"
+                    alt="HTML5"
+                  />{" "}
+                  HTML
+                </li>
+                <li>
+                  <img
+                    src="https://img.icons8.com/color/48/000000/css3.png"
+                    alt="CSS3"
+                  />{" "}
+                  CSS
+                </li>
+                <li>
+                  <img
+                    src="https://img.icons8.com/color/48/000000/javascript--v1.png"
+                    alt="Javascript"
+                  />{" "}
+                  Javascript
+                </li>
+                <li>
+                  <img
+                    src="https://img.icons8.com/?size=512&id=bp24DwGXJDyT&format=png"
+                    alt="Jest"
+                  />{" "}
+                  Jest
+                </li>
               </ul>
             </div>
           </div>
         </div>
         <div className="littr-video">
+          <h2 className="littr-subtitle">Demo Video</h2>
           <iframe
             className="littr-video-frame"
             width="560"
