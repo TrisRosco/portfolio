@@ -1,11 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect} from "react";
 import NavBar from "../../components/navBar";
 import "./styles.css";
-import aboutFace from "../../assets/images/aboutFace.webp";
 
 function About() {
+
+
   useEffect(() => {
     console.log("About loaded");
+
   }, []);
 
   return (
