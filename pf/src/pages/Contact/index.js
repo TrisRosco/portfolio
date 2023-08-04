@@ -1,16 +1,9 @@
-import { React, useState, useEffect } from "react";
+import { React, useEffect } from "react";
 import "./styles.css";
 import NavBar from "../../components/navBar";
-import NavDropDown from "../../components/navDropDown";
-
+import PhysicsTest from "../../components/PhysicsTest";
 
 const Contact = () => {
-
-    const [dropDownState, setDropDownState] = useState(false);
-
-    const toggleDropDown = () => {
-        setDropDownState(!dropDownState);
-    }
 
     useEffect(() => {
         console.log("Contact loaded");
@@ -19,8 +12,7 @@ const Contact = () => {
     return (
         <div className="contact-container"> 
             <header className="contact-header">
-                <NavBar  projectClick={toggleDropDown} />
-                <NavDropDown  dropDownOpen={dropDownState} />
+                <NavBar  />
             </header>
             <div className="contact-content">
                 <div className="contact-content-item">
@@ -30,6 +22,7 @@ const Contact = () => {
                     <p>Email: 
 
                     </p>
+                    <PhysicsTest />
                 </div>
                 <div className="contact-content-item">
 
