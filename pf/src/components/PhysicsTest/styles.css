@@ -1,33 +1,15 @@
+  
+::-webkit-scrollbar {
+ height: 5px;
+ width: 5px;
+ -webkit-border-radius: 1ex;
+}
 
-  #progress {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    transform: rotate(-90deg);
-  }
-  
-  circle {
-    stroke-dashoffset: 0;
-    stroke-width: 15%;
-    fill: none;
-  }
-  
-  ::-webkit-scrollbar {
-    height: 5px;
-    width: 5px;
-    background: var(--background);
-    -webkit-border-radius: 1ex;
-  }
-  
-
-  .refresh path {
-    fill: var(--accent);
-  }
-  
-  .box {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: #fff3
+.box {
+ width: 100px;
+ height: 100px;
+ border-radius: 50%;
+ background: #fff3;
+ background-image: "https://i.pinimg.com/originals/4c/a3/1e/4ca31e5343e89bc550044caec29543e6.jpg";
   }
   
