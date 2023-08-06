@@ -14,6 +14,7 @@
  background: lightcyan;
  color: #293942;
  transition: border-radius 0.1s ease-in-out;
+ transition: opacity 0.2s ease-in-out;
  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
  cursor: pointer;
  user-select: none;
@@ -23,6 +24,7 @@
 
 .box:hover {
  opacity : 1;
+ transition: 0.1s ;
  filter: blur(0px);
 }
 
