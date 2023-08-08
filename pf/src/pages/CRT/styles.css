@@ -18,3 +18,9 @@
     filter: blur(0px);
     }
   }
+
+  @media (max-width: 768px) {
+    .crt-container {
+   
+    }
+  }

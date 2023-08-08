@@ -71,8 +71,11 @@ const LITTR = () => {
             <br />
           </p>
           <div className="example-images-container">
+          <div className="example-image">
             <img id="card" src={postexample} alt="A post card" />
+            <p className="image-description">A post card</p>
           </div>
+        </div>
           <p>
             The{" "}
             <a
@@ -91,9 +94,15 @@ const LITTR = () => {
             against a regex to ensure it's a valid UK postcode.
           </p>
           <div className="example-images-container">
+          <div className="example-image">
             <img id="bad" src={bad} alt="An invalid title" />
-            <img id="good" src={good} alt="A valid title" />
+            <p className="image-description">An invalid title</p>
           </div>
+          <div className="example-image">
+            <img id="good" src={good} alt="A valid title" />
+            <p className="image-description">A valid title</p>
+          </div>
+        </div>
         </div>
         <div className="littr-list-container">
           <div className="littr-features">

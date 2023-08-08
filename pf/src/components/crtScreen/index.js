@@ -59,7 +59,7 @@ const CrtScreen = (props) => {
       <div className="crtScreen-image">
         <img id="my-face" src={face} alt="My stupid face" />
       </div>
-      <div className="crtScreen-content-text">
+      <div id="hire-now">
         <p>Hire now! Call us at 1-800-TRISTAN</p>
         <p>Shareware version also available</p>
       </div>

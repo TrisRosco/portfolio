@@ -241,6 +241,13 @@
     font-family: "VT323", monospace;
     animation: hueRotate 0.05s linear infinite;
   }
+  
+  #hire-now{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
   .crtScreen-image {
     display: flex;
