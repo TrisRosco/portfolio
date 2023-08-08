@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import "./styles.css";
 import NavBar from "../../components/navBar";
+import bad from "../../assets/images/littr/bad.jpg";
+import good from "../../assets/images/littr/good.jpg";
+import postexample from "../../assets/images/littr/postexample.jpg";
 
 const LITTR = () => {
   useEffect(() => {
@@ -20,14 +23,20 @@ const LITTR = () => {
           <p>
             <span className="littr-highlight">LITTR</span> is a lightweight
             social media platform that allows users to organize and volunteer
-            for litter cleanups in their local area. Built in 4 weeks.
+            for litter cleanups in their local area. It's designed to be a
+            simple, easy to use app that allows users to quickly and easily
+            create and volunteer for litter cleanups in their local area.
             <br />
             The app is designed to be simple and easy to use, with a focus on
             usability and accessibility. It was built as a mobile-first app,
             with a responsive design that scales to fit any screen size.
             <br />
-            In its current state, the app is in its MVP stage, with the core
-            functionality implemented. The current features are:
+            LITTR wasn't always a litter cleanup app. It was originally designed
+            as a community noticeboard called SideQuest, an odd jobs app that
+            allowed users to post and volunteer for odd jobs. It had a lite-fantasy
+            theme akin to a videogame quest board. However, we decided to pivot to a 
+            litter cleanup app, as we felt the scope and scale of the project was too
+            large for the time we had available.
           </p>
           <p>
             This project was built in collaboration with 5 other developers as a
@@ -60,11 +69,10 @@ const LITTR = () => {
             were built by me. Initially, they were entirely JS and CSS, but they
             were later rebuilt using MUI as a means of standardizing the design.
             <br />
-            <img
-              src="https://i.pinimg.com/originals/4c/a3/1e/4ca31e5343e89bc550044caec29543e6.jpg"
-              alt=""
-            />
           </p>
+          <div className="example-images-container">
+            <img id="card" src={postexample} alt="A post card" />
+          </div>
           <p>
             The{" "}
             <a
@@ -82,6 +90,10 @@ const LITTR = () => {
             posted is appropriate. For example the Postcode field is checked
             against a regex to ensure it's a valid UK postcode.
           </p>
+          <div className="example-images-container">
+            <img id="bad" src={bad} alt="An invalid title" />
+            <img id="good" src={good} alt="A valid title" />
+          </div>
         </div>
         <div className="littr-list-container">
           <div className="littr-features">
