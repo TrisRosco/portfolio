@@ -1,0 +1,66 @@
+::-webkit-scrollbar {
+ height: 5px;
+ width: 5px;
+ -webkit-border-radius: 1ex;
+}
+
+.box {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100px;
+ height: 100px;
+ border-radius: 10%;
+ background: lightcyan;
+ color: #293942;
+ transition: border-radius 0.1s ease-in-out;
+ transition: opacity 0.2s ease-in-out;
+ box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
+ cursor: pointer;
+ user-select: none;
+ opacity : 0.5;
+ filter: blur(2px);
+}
+
+.box:hover {
+ opacity : 1;
+ transition: 0.1s ;
+ filter: blur(0px);
+}
+
+.box:active {
+ translate: 2px 2px;
+ transition: 0.1s ;
+ box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.circle {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100px;
+ height: 100px;
+ border-radius: 50%;
+ background: #FFBD59;
+ color: #293942;
+ transition: border-radius 0.1s ease-in-out;
+ transition: opacity 0.2s ease-in-out;
+ box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
+ cursor: pointer;
+ user-select: none;
+ opacity : 0.5;
+ filter: blur(2px);
+}
+
+.circle:hover {
+ opacity : 1;
+ filter: blur(0px);
+ transition: border-radius 0.1s ease-in-out;
+}
+
+.circle:active {
+ translate: 2px 2px;
+ transition: 0.1s ;
+ box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+}
+  

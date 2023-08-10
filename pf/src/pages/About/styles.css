@@ -24,8 +24,8 @@ img:hover {
   align-items: center;
   justify-content: center;
   background-image: url("../../assets/images/aboutBG.png");
-  background-size: fit;
   background-repeat: no-repeat;
+  background-size: cover;
 }  
 
 .about-container {
@@ -100,3 +100,26 @@ img:hover {
   }
 }
   
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .about{
+    background-image: none;
+  }
+
+  .about-container {
+    height: 100vh;
+    margin: 1em;
+  }
+  .tech-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .tech-item {
+    margin: 0.5em;
+  }
+  #hey {
+    font-size: 2.5em;
+  }
+
+
+}
