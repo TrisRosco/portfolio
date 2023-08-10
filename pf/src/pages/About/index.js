@@ -26,13 +26,12 @@ function About() {
               experiences.
             </p>
             <p>
-              I'm a big fan of all things Tech, and I'm always looking for new
+              I'm a big fan of all things tech, and I'm always looking for new
               things to learn. I'm currently working on a few projects, which
               you can check out on my GitHub.
             </p>
             <p>
-              I'm always looking for new opportunities to learn and grow. If
-              you'd like to get in touch, feel free to reach out!
+             If you'd like to get in touch, feel free to reach out!
             </p>
             <div id="link-container">
               <p>

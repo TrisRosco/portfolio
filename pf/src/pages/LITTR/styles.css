@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: left;
 }
 
 .littr-tech-item img {
@@ -42,6 +42,14 @@
 .littr-description {
     word-wrap: break-word;
     width: fit-content;
+}
+
+.littr-video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .littr-video-frame {
@@ -80,7 +88,7 @@
 #bad,
 #good,
 #card {
-    width: 50%;
+    width: 60%;
     height: auto;
     border-radius: 10px;
     box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.2);
@@ -112,11 +120,23 @@
         flex-direction: column;
         align-items: center;
     }
+    
+    .littr-video{
+        
+    }
+
+    #bad,
+    #good,
+    #card {
+    width: 80%;
+
+    }
+
 
     .littr-description {
         font-size: smaller;
     }
     .littr-video-frame {
-        width: 380px;
+        width: 100%
     }
 }
