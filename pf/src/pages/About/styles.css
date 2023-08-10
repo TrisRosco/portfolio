@@ -104,7 +104,6 @@ img:hover {
 @media (max-width: 768px) {
   .about{
     background-image: none;
-    
   }
 
   .about-container {
@@ -119,12 +118,10 @@ img:hover {
     margin: 0.5em;
   }
   #hey {
-    font-size: 1.5em;
+    font-size: 2.5em;
   }
   #linkedin-github {
     font-size: small;
   }
-  .my-name {
-    font-size: 1.5em;
-  }
+
 }

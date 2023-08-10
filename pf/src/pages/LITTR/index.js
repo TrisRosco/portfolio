@@ -82,7 +82,6 @@ const LITTR = () => {
             </a>{" "}
             were built by me. Initially, they were entirely JS and CSS, but they
             were later rebuilt using MUI as a means of standardizing the design.
-            <br />
           </p>
           <div className="example-images-container">
             <div className="example-image">
@@ -91,10 +90,52 @@ const LITTR = () => {
             </div>
           </div>
           <p>
-            Another example of my work are the little characters featured on the
-            front page.
+            The buttons throughout the app are animated in such a way that they
+            appear to click down when pressed. This is achieved by a very simple
+            CSS animation that translates the button down and right by 2px, at 
+            the same time as the box-shadow is translated up and left by 2px.
           </p>
+          <div className="example-images-container">
+            <div className="example-image">
+            <button id="example-button">Example Button</button>
+              <p className="image-description">An example of a LITTR button with a slower animation</p>
+            </div>
+          </div>
           <p>
+            Another example of my work are the little characters featured on the
+            {" "}
+            <a
+              href="https://littr.netlify.app/src/pages/landingpage"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="littr-link"
+            >
+              landing page
+            </a>{" "}
+            <br />
+            Originally concieved as a parody of app mascots such as the discord blob or the duolingo owl, I made LittleFella.svg in figma 
+            during the early stages of the project in the background while we were discussing the app's initial design, and you can trace its origin
+            back to the very first moodboard we made.
+          </p>
+          <div className="example-image">
+              <img id="good" src={wholegang} alt="fellas" />
+              <p className="image-description">The whole gang</p>
+            </div>
+          <p>
+            Later in development we noticed that a lot of the user feedback noted that the original landing page 
+            didn't fit the aesthetic of the rest of the app. So we decided to go back to LittleFella.svg, and expand on the concept a mascot 
+            that represented the app.
+            <br />
+          </p>
+          <div className="example-image">
+              <img id="good" src={littlefella} alt="theOG" />
+              <p className="image-description">The original LittleFella.svg</p>
+            </div>
+          <p>
+          <p>
+            Their abstract design in theory should make them appealing to a broad audience, and their simplicity means they're easy to pose
+            and modify by anyone on the team, regardless of artistic ability.
+          </p>
             The{" "}
             <a
               href="https://littr.netlify.app/src/pages/createpostform"
