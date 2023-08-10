@@ -4,6 +4,9 @@ import NavBar from "../../components/navBar";
 import bad from "../../assets/images/littr/bad.jpg";
 import good from "../../assets/images/littr/good.jpg";
 import postexample from "../../assets/images/littr/postexample.jpg";
+import moodboard from "../../assets/images/littr/moodboard.jpg";
+import littlefella from "../../assets/images/littr/littlefella.jpg";
+import wholegang from "../../assets/images/littr/wholegang.jpg";
 
 const LITTR = () => {
   useEffect(() => {
@@ -21,38 +24,49 @@ const LITTR = () => {
         </header>
         <div className="littr-description">
           <p>
-            <span className="littr-highlight">LITTR</span> is a lightweight
-            social media platform that allows users to organize and volunteer
-            for litter cleanups in their local area. It's designed to be a
-            simple, easy to use app that allows users to quickly and easily
-            create and volunteer for litter cleanups in their local area.
-            <br />
-            The app is designed to be simple and easy to use, with a focus on
-            usability and accessibility. It was built as a mobile-first app,
-            with a responsive design that scales to fit any screen size.
-            <br />
-            LITTR wasn't always a litter cleanup app. It was originally designed
-            as a community noticeboard called SideQuest, an odd jobs app that
-            allowed users to post and volunteer for odd jobs. It had a lite-fantasy
-            theme akin to a videogame quest board. However, we decided to pivot to a 
-            litter cleanup app, as we felt the scope and scale of the project was too
-            large for the time we had available.
-          </p>
-          <p>
-            This project was built in collaboration with 5 other developers as a
-            final project for the{" "}
             <a
-              href="https://www.schoolofcode.co.uk/"
+              href="https://littr.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="littr-link"
             >
-              School of Code
+              LITTR
             </a>{" "}
-            Full Stack Web Development course.
+            is a lightweight social media platform that allows users to organize
+            and volunteer for litter cleanups in their local area.
+            <br />
+            The app is designed to be simple and easy to use, with a focus on
+            usability and accessibility. It's built as a mobile-first app, with
+            a responsive design that scales to fit any screen size.
+            <p>
+              This project was built in collaboration with 5 other developers as
+              a final project for the{" "}
+              <a
+                href="https://www.schoolofcode.co.uk/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="littr-link"
+              >
+                School of Code
+              </a>{" "}
+              Full Stack Web Development course.
+            </p>
+            LITTR wasn't always a litter cleanup app. It was originally designed
+            as a community noticeboard called SideQuest, an odd jobs app that
+            allowed users to post and volunteer for odd jobs. It had a
+            lite-fantasy theme akin to a videogame quest board. However, we
+            decided to pivot to a litter cleanup app, as we felt the scope and
+            scale of the project was too large for the time we had available.
           </p>
+          <div className="example-images-container">
+            <div className="example-image">
+              <img id="moodboard" src={moodboard} alt="moodboard" />
+              <p className="image-description">
+                Our figma moodboard, where we conceptualised the app
+              </p>
+            </div>
+          </div>
           <p>
-            {" "}
             My contributions to this project were mostly on the front-end. The
             general aesthetic of the app was my design, and I'm resonsible for
             the majority of the CSS.
@@ -71,11 +85,15 @@ const LITTR = () => {
             <br />
           </p>
           <div className="example-images-container">
-          <div className="example-image">
-            <img id="card" src={postexample} alt="A post card" />
-            <p className="image-description">A post card</p>
+            <div className="example-image">
+              <img id="card" src={postexample} alt="A post card" />
+              <p className="image-description">An example of a LITTR post</p>
+            </div>
           </div>
-        </div>
+          <p>
+            Another example of my work are the little characters featured on the
+            front page.
+          </p>
           <p>
             The{" "}
             <a
@@ -90,19 +108,29 @@ const LITTR = () => {
             broad userbase, with a focus on accessibility.
             <br />
             There are a number of built-in checks to ensure anything that's
-            posted is appropriate. For example the Postcode field is checked
+            posted is appropriate. For example the postcode field is checked
             against a regex to ensure it's a valid UK postcode.
           </p>
           <div className="example-images-container">
-          <div className="example-image">
-            <img id="bad" src={bad} alt="An invalid title" />
-            <p className="image-description">An invalid title</p>
+            <div className="example-image">
+              <img id="bad" src={bad} alt="An invalid title" />
+              <p className="image-description">An invalid title</p>
+            </div>
+            <div className="example-image">
+              <img id="good" src={good} alt="A valid title" />
+              <p className="image-description">A valid title</p>
+            </div>
           </div>
-          <div className="example-image">
-            <img id="good" src={good} alt="A valid title" />
-            <p className="image-description">A valid title</p>
-          </div>
-        </div>
+
+          <p>
+            The future of LITTR is set out in our trello board. We have a number
+            of features we'd like to implement, an example of which is a scoring
+            system that rewards users points for volunteering for events, these
+            points could then be used in-app to unlock new customisation options
+            for their profile and posts. The idea is that gamifying the app will
+            passively encourage users to use the app more often, and provide an
+            incentive for younger users to help their community.
+          </p>
         </div>
         <div className="littr-list-container">
           <div className="littr-features">
@@ -134,7 +162,7 @@ const LITTR = () => {
                   <img
                     src="https://img.icons8.com/color/48/000000/react-native.png"
                     alt="React"
-                  />{" "}
+                  />
                   React
                 </li>
                 <li>
