@@ -240,6 +240,7 @@
     flex-direction: column;
     font-family: "VT323", monospace;
     animation: hueRotate 0.05s linear infinite;
+    user-select: none;
   }
   
   #hire-now{
