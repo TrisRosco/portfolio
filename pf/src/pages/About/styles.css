@@ -24,8 +24,8 @@ img:hover {
   align-items: center;
   justify-content: center;
   background-image: url("../../assets/images/aboutBG.png");
-  background-size: fit;
   background-repeat: no-repeat;
+  background-size: cover;
 }  
 
 .about-container {
