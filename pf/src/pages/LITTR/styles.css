@@ -148,14 +148,13 @@
     }
     .littr-list-container {
         justify-content: center;
-        flex-direction: column  ;
+        flex-direction: column;
     }
 
     .example-images-container {
         flex-direction: column;
         align-items: center;
     }
-    
 
     #bad,
     #good,
@@ -169,7 +168,6 @@
         width: auto;
         max-height: 100px;
     }
-
 
     .littr-description {
         font-size: smaller;
