@@ -49,7 +49,7 @@ const LITTR = () => {
               >
                 School of Code
               </a>{" "}
-              Full Stack Web Development course.
+              full-stack bootcamp.
             </p>
             LITTR wasn't always a litter cleanup app. It was originally designed
             as a community noticeboard called SideQuest, an odd jobs app that

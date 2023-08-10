@@ -19,16 +19,26 @@ function About() {
               Hey!
               <br /> I'm <span className="my-name">Tristan!</span>
             </h1>
-
             <p>
-              I'm a Junior Software Engineer based in the UK. I'm passionate
-              about creating beautiful, intuitive, and performant user
-              experiences.
+              A <span className="highlight">Junior Full-Stack Developer</span> based in the UK. 
+              <br/>
+              I've got a broad selection of tech skills and experience, and I'm constantly looking to broaden that range even further.
+            </p>
+            <p>
+              With a background in <span className="highlight">Video Editing</span>, I have a keen eye for detail and a passion for creating things that appeal to a wide range of audiences.
             </p>
             <p>
               I'm a big fan of all things tech, and I'm always looking for new
               things to learn. I'm currently working on a few projects, which
-              you can check out on my GitHub.
+              you can check out on my 
+              <a 
+                href="https://www.github.com/trisrosco"
+                target="_blank"
+                rel="noopener noreferrer"
+                id="github-inline"
+                >
+                &nbsp;GitHub
+              </a>!
             </p>
             <p>
              If you'd like to get in touch, feel free to reach out!
