@@ -1,0 +1,78 @@
+.contact-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-size: 1.5em;
+    color: #FFBD59;
+    text-align: center;
+}
+
+input{
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.55);
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.4s;
+    
+}
+
+input:active{
+    height: 40px;
+    transition: 0.2s;
+}
+
+input::selection{
+    background-color: #FFBD59;
+    color: black;
+}
+
+input:focus{
+    height: 40px;
+    border-radius: 2px;
+    transition: 0.2s;    
+}
+
+#message{
+    height: 100%;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.55);
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+#message::selection{
+    background-color: #FFBD59;
+    color: black;
+}
+
+#message:focus{
+    height: 200px;
+    border-radius: 2px;
+    transition: 0.2s;
+    box-shadow: inset 4px 4px 2px rgba(0, 0, 0, 0.55);
+}
+
+#submit{
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.55);
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.4s;
+    background-color: #FFBD59;
+    color: black;
+}
