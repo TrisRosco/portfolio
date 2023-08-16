@@ -34,13 +34,23 @@ const Contact = () => {
     alert("Message sent!");
   };
 
-  function handleMessageCheck() {
-    let input = document.getElementById("message");
-    let limit = document.getElementsByClassName("input-limit")[0];
-    limit.innerHTML = input.value.length + "/255";
+  function handleNameCheck() {
+    let input = document.getElementsByName("user_name")[0];
+    let limit = document.getElementsByClassName("name-limit")[0];
+    limit.innerHTML = input.value.length + "/55";
   }
 
+  function handleEmailCheck() {
+    let input = document.getElementsByName("user_email")[0];
+    let limit = document.getElementsByClassName("email-limit")[0];
+    limit.innerHTML = input.value.length + "/55";
+  }
 
+  function handleMessageCheck() {
+    let input = document.getElementById("message");
+    let limit = document.getElementsByClassName("message-limit")[0];
+    limit.innerHTML = input.value.length + "/255";
+  }
 
   return (
     <div className="contact-container">
@@ -52,12 +62,14 @@ const Contact = () => {
           <p> Contact Me </p>
           <form className="contact-input" ref={form} onSubmit={handleSubmit}>
             <label>Name</label>
-            <input type="text" name="user_name" maxLength={50}/>
+            <label className="name-limit"></label>
+            <input type="text" name="user_name" maxLength={55} onChange={handleNameCheck}/>
             <label>Email</label>
-            <input type="email" name="user_email" maxLength={50}/>
+            <label className="email-limit"></label>
+            <input type="email" name="user_email" maxLength={55} onChange={handleEmailCheck}/>
             <label>Message</label>
-            <label className="input-limit"></label>
-            <textarea id="message" name="message" maxLength={255} onChange={handleMessageCheck} />
+            <label className="message-limit"></label>
+            <textarea id="message" name="message" maxLength={255} onChange={handleMessageCheck}/>
             <input id="submit" type="submit" value="Send" />
           </form>
         </div>

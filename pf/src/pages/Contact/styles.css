@@ -14,7 +14,7 @@ label{
     text-align: center;
 }
 
-.input-limit{
+.message-limit, .email-limit, .name-limit{
     font-size: 0.8em;
     color: aliceblue;
     margin: 0px;
