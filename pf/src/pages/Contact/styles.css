@@ -19,6 +19,15 @@ label{
     color: aliceblue;
     margin: 0px;
     opacity: 0.55;
+    transition: 0.2s ;
+}
+
+.message-limit-error, .email-limit-error, .name-limit-error{
+    font-size: 0.8em;
+    color: #fa4a32;
+    margin: 0px;
+    opacity: 1;
+    transition: 0.2s ;
 }
 
 input{
