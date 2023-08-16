@@ -78,6 +78,7 @@ const Contact = () => {
           <p> Contact Me </p>
           <form className="contact-input" ref={form} onSubmit={handleSubmit}>
             <label>Name</label>
+            <div classname="input-container">
             <label className="name-limit"></label>
             <input
               type="text"
@@ -85,7 +86,9 @@ const Contact = () => {
               maxLength={55}
               onChange={handleNameCheck}
             />
+            </div>
             <label>Email</label>
+            <div classname="input-container">
             <label className="email-limit"></label>
             <input
               type="email"
@@ -93,7 +96,9 @@ const Contact = () => {
               maxLength={55}
               onChange={handleEmailCheck}
             />
+            </div>
             <label>Message</label>
+            <div classname="input-container">
             <label className="message-limit"></label>
             <textarea
               id="message"
@@ -101,6 +106,7 @@ const Contact = () => {
               maxLength={255}
               onChange={handleMessageCheck}
             />
+            </div>
             <input id="submit" type="submit" value="Send" />
           </form>
         </div>

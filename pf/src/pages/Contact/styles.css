@@ -20,6 +20,7 @@ label{
     margin: 0px;
     opacity: 0.55;
     transition: 0.2s ;
+    text-align: left;
 }
 
 .message-limit-error, .email-limit-error, .name-limit-error{
@@ -29,6 +30,7 @@ label{
     opacity: 1;
     transition: 0.2s ;
 }
+
 
 input{
     height: 30px;
