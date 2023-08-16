@@ -29,8 +29,18 @@ const Contact = () => {
         (error) => {
           console.log(error.text);
         }
-      );
+      ); 
+    form.current.reset();
+    alert("Message sent!");
   };
+
+  function handleMessageCheck() {
+    let input = document.getElementById("message");
+    let limit = document.getElementsByClassName("input-limit")[0];
+    limit.innerHTML = input.value.length + "/255";
+  }
+
+
 
   return (
     <div className="contact-container">
@@ -42,11 +52,12 @@ const Contact = () => {
           <p> Contact Me </p>
           <form className="contact-input" ref={form} onSubmit={handleSubmit}>
             <label>Name</label>
-            <input type="text" name="user_name" />
+            <input type="text" name="user_name" maxLength={50}/>
             <label>Email</label>
-            <input type="email" name="user_email" />
+            <input type="email" name="user_email" maxLength={50}/>
             <label>Message</label>
-            <textarea id="message" name="message" />
+            <label className="input-limit"></label>
+            <textarea id="message" name="message" maxLength={255} onChange={handleMessageCheck} />
             <input id="submit" type="submit" value="Send" />
           </form>
         </div>
