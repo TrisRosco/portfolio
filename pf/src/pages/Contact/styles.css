@@ -18,6 +18,7 @@ label{
     font-size: 0.8em;
     color: aliceblue;
     margin: 0px;
+    margin-bottom: 0.2em;
     opacity: 0.55;
     transition: 0.2s ;
     text-align: left;
@@ -26,11 +27,10 @@ label{
 .message-limit-error, .email-limit-error, .name-limit-error{
     font-size: 0.8em;
     color: #fa4a32;
-    margin: 0px;
     opacity: 1;
     transition: 0.2s ;
+    /* text-decoration-line: underline; */
 }
-
 
 input{
     height: 30px;
@@ -39,14 +39,7 @@ input{
     border: none;
     box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.55);
     font-size: 16px;
-    font-weight: bold;
     transition: 0.4s;
-    
-}
-
-input:active{
-    height: 40px;
-    transition: 0.2s;
 }
 
 input::selection{
@@ -56,18 +49,24 @@ input::selection{
 
 input:focus{
     height: 40px;
-    border-radius: 2px;
     transition: 0.2s;    
+    border: none;
+    outline: none;
 }
 
-#message{
-    height: 100%;
+
+#message {
+    height: auto; /* Automatically adjust height based on content */
     width: 300px;
+    min-height: fit-content;
     border-radius: 5px;
     border: none;
     box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.55);
     font-size: 16px;
     transition: 0.2s;
+    resize: none;
+    outline: none;
+    overflow: hidden;
 }
 
 #message::selection{
@@ -76,10 +75,7 @@ input:focus{
 }
 
 #message:focus{
-    height: 200px;
-    border-radius: 2px;
-    transition: 0.2s;
-    box-shadow: inset 4px 4px 2px rgba(0, 0, 0, 0.55);
+    animation: dropThenExpand2 1s ease-out  forwards;
 }
 
 #submit{
@@ -105,4 +101,38 @@ input:focus{
     translate : 2px 2px;
     box-shadow : 0px 0px;
     transition: 0.2s;
+}
+
+
+@keyframes dropThenExpand2{
+    0% {
+        height: 30px;
+        width: 300px;
+    }
+    20% {
+        height: 150px;
+        width: 300px;
+    }
+    35% {
+        height: 165px;
+        width: 300px;
+    }
+    45% {
+        height: 150px;
+        width: 300px;
+    }
+    70% {
+        height: 150px;
+        width: 360px;
+    }
+    90% {
+        height: 150px;
+        width: 360px;
+        box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.55);
+    }
+    100% {
+        height: 150px;
+        width: 360px;
+        box-shadow: inset 4px 4px 2px rgba(0, 0, 0, 0.55);
+    }
 }
