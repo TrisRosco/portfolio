@@ -95,14 +95,16 @@ const Contact = () => {
     }
   }
 
+
+
   return (
-    <div className="contact-container">
+    <div className="contact">
       <header className="contact-header">
         <NavBar />
       </header>
       <div className="contact-content">
-        <div className="contact-content-item">
-          <p> Contact Me </p>
+        <div className="contact-title">
+          <p> Contact me via the neat little form below! </p>
           <form className="contact-input" ref={form} onSubmit={checkValidity}>
             <label>Name</label>
             <div classname="input-container">
