@@ -22,7 +22,7 @@ function About() {
             <p>
               A <span className="highlight">Junior Full-Stack Developer</span> based in the UK. 
               <br/>
-              I've got a broad selection of tech skills and experience, and I'm constantly looking to broaden that range even further.
+              I've got a broad range of tech skills and experience, and I'm constantly looking to broaden that range even further.
             </p>
             <p>
               With a background in <span className="highlight">Video Editing</span>, I have a keen eye for detail and a passion for creating things that appeal to a wide range of audiences.

@@ -1,0 +1,147 @@
+.contact{
+    height: 100vh;
+    background-image: url("../../assets/images/contactBG.svg");
+    background-position: 0px -35px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.contact-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-size: 1.5em;
+    color: #FFBD59;
+    text-align: center;
+}
+
+.message-limit, .email-limit, .name-limit{
+    font-size: 0.8em;
+    color: aliceblue;
+    margin: 0px;
+    margin-bottom: 0.2em;
+    opacity: 0.55;
+    transition: 0.2s ;
+    text-align: left;
+}
+
+.message-limit-error, .email-limit-error, .name-limit-error{
+    font-size: 0.8em;
+    color: #fa4a32;
+    opacity: 1;
+    transition: 0.2s ;
+    /* text-decoration-line: underline; */
+}
+
+input{
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.55);
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+input::selection{
+    background-color: #FFBD59;
+    color: black;
+}
+
+input:focus{
+    height: 40px;
+    transition: 0.2s;    
+    border: none;
+    outline: none;
+}
+
+
+#message {
+    height: auto; /* Automatically adjust height based on content */
+    width: 300px;
+    min-height: fit-content;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.55);
+    font-size: 16px;
+    transition: 0.2s;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+}
+
+#message::selection{
+    background-color: #FFBD59;
+    color: black;
+}
+
+#message:focus{
+    animation: dropThenExpand2 1s ease-out  forwards;
+}
+
+#submit{
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.55);
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.4s;
+    background-color: #FFBD59;
+    color: black;
+    margin: 10px;
+}
+
+#submit:hover{
+    background-color: #f9f9f9;
+    transition: 0.2s;
+}
+
+#submit:active{
+    translate : 2px 2px;
+    box-shadow : 0px 0px;
+    transition: 0.2s;
+}
+
+
+@keyframes dropThenExpand2{
+    0% {
+        height: 30px;
+        width: 300px;
+    }
+    20% {
+        height: 150px;
+        width: 300px;
+    }
+    35% {
+        height: 165px;
+        width: 300px;
+    }
+    45% {
+        height: 150px;
+        width: 300px;
+    }
+    70% {
+        height: 150px;
+        width: 360px;
+    }
+    90% {
+        height: 150px;
+        width: 360px;
+        box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.55);
+    }
+    100% {
+        height: 150px;
+        width: 360px;
+        box-shadow: inset 4px 4px 2px rgba(0, 0, 0, 0.55);
+    }
+}
