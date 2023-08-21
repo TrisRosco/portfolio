@@ -70,14 +70,20 @@ const NavDropDown = (props) => {
               <p>CRT</p>
             </Link>
           </motion.div>
-          {/* <motion.div
+          <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
             className="drop-down-item"
           >
-            <p>Another thing</p>
-          </motion.div> */}
+          <Link
+              to="/interface"
+              style={{ textDecoration: "none", color: "inherit" }}
+              className="drop-down-item"
+            >
+            <p>Cool interface</p>
+            </Link>
+          </motion.div>
           {/* <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
