@@ -19,7 +19,15 @@ function ClickySwitch() {
     audio.play();
   };
 
-  const toggleSwitch = () => setIsOn(!isOn);
+  function toggleSwitch(event, info) {
+    if (info.point.x > 0) {
+      setIsOn(true);
+      playButtonUp();
+    } else {
+      setIsOn(false);
+      playButtonUp();
+    }
+  }
 
   const spring = {
     type: "spring",
@@ -29,7 +37,7 @@ function ClickySwitch() {
 
   return (
     <div className="switch-outer">
-      <div className="switch-inner" data-isOn={isOn} onClick={toggleSwitch}>
+      <div className="switch-inner" data-isOn={isOn}>
         <motion.div
           className="switch-handle"
           layout
@@ -39,9 +47,9 @@ function ClickySwitch() {
           drag="x"
           dragControls={controls}
           dragConstraints={{ left: 0, right: 0 }}
-          dragElastic={0.1}
+          dragElastic={0.01}
+          onDragEnd={toggleSwitch}
           onMouseDown={playButtonDown}
-          onMouseUp={playButtonUp}
         />
       </div>
     </div>
