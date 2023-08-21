@@ -19,13 +19,22 @@ function ClickySwitch() {
     audio.play();
   };
 
+  function vibrateDevice() {
+    // Check if the Vibration API is supported by the browser
+    if ("vibrate" in navigator) {
+      navigator.vibrate(50); // Adjust the duration as needed
+    }
+  }
+
   function toggleSwitch(event, info) {
     if (info.point.x > 0) {
       setIsOn(true);
       playButtonUp();
+      vibrateDevice();
     } else {
       setIsOn(false);
       playButtonUp();
+      vibrateDevice();
     }
   }
 
