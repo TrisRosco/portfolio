@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./styles.css";
 import { motion, useDragControls } from "framer-motion";
 import buttonDown from "../../../assets/sounds/buttonDown.mp3";
@@ -6,18 +6,22 @@ import buttonUp from "../../../assets/sounds/buttonUp.mp3";
 
 function ClickySwitch() {
   const [isOn, setIsOn] = useState(false);
-
   const controls = useDragControls();
+  const audioButtonDown = new Audio(buttonDown);
+  const audioButtonUp = new Audio(buttonUp);
 
   const playButtonDown = () => {
-    const audio = new Audio(buttonDown);
-    audio.play();
+    audioButtonDown.play();
   };
 
   const playButtonUp = () => {
-    const audio = new Audio(buttonUp);
-    audio.play();
+    audioButtonUp.play();
   };
+
+  useEffect(() => {
+    vibrateDevice();
+    console.log("vibrate");
+  }, [isOn]);
 
   function vibrateDevice() {
     // Check if the Vibration API is supported by the browser
@@ -30,11 +34,9 @@ function ClickySwitch() {
     if (info.point.x > 0) {
       setIsOn(true);
       playButtonUp();
-      vibrateDevice();
     } else {
       setIsOn(false);
       playButtonUp();
-      vibrateDevice();
     }
   }
 
@@ -51,14 +53,13 @@ function ClickySwitch() {
           className="switch-handle"
           layout
           transition={spring}
-          whileHover={{ scale: 0.99 }}
           whileTap={{ scale: 0.95 }}
           drag="x"
           dragControls={controls}
           dragConstraints={{ left: 0, right: 0 }}
           dragElastic={0.01}
           onDragEnd={toggleSwitch}
-          onMouseDown={playButtonDown}
+          onTapStart={playButtonDown}
         />
       </div>
     </div>

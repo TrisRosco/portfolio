@@ -9,6 +9,7 @@ const CoolInterface = () => {
       <header className="interface-header">
         <NavBar />
       </header>
+      <p className="interface-title">Testing haptic feedback</p>
       <div className="interface-container">
         <ClickySwitch />
       </div>
