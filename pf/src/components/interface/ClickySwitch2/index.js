@@ -1,42 +1,43 @@
 import React, { useState, useEffect } from "react";
 import "./styles.css";
 import { motion, useDragControls } from "framer-motion";
-import buttonDown from "../../../assets/sounds/buttonDown.mp3";
-import buttonUp from "../../../assets/sounds/buttonUp.mp3";
+// import buttonDown from "../../../assets/sounds/buttonDown.mp3";
+// import buttonUp from "../../../assets/sounds/buttonUp.mp3";
 
-function ClickySwitch() {
+function ClickySwitch2() {
   const [isOn, setIsOn] = useState(false);
   const controls = useDragControls();
-  const audioButtonDown = new Audio(buttonDown);
-  const audioButtonUp = new Audio(buttonUp);
+  // const audioButtonDown = new Audio(buttonDown);
+  // const audioButtonUp = new Audio(buttonUp);
 
-  const playButtonDown = () => {
-    audioButtonDown.play();
-  };
+  // const playButtonDown = () => {
+  //   audioButtonDown.play();
+  // };
 
-  const playButtonUp = () => {
-    audioButtonUp.play();
-  };
+  // const playButtonUp = () => {
+  //   audioButtonUp.play();
+  // };
 
   useEffect(() => {
     vibrateDevice();
     console.log("vibrate");
   }, [isOn]);
 
+
+
   function vibrateDevice() {
     // Check if the Vibration API is supported by the browser
     if ("vibrate" in navigator) {
       navigator.vibrate(50); // Adjust the duration as needed
+
     }
   }
 
   function toggleSwitch(event, info) {
     if (info.point.x > 0) {
       setIsOn(true);
-      playButtonUp();
     } else {
       setIsOn(false);
-      playButtonUp();
     }
   }
 
@@ -47,23 +48,24 @@ function ClickySwitch() {
   };
 
   return (
-    <div className="switch-outer">
-      <div className="switch-inner" data-isOn={isOn}>
+    <div className="switch2-outer">
+      <div className="switch2-inner" data-isOn={isOn}>
         <motion.div
-          className="switch-handle"
+          className="switch2-handle"
+          data-isOn={isOn}
           layout
           transition={spring}
-          whileTap={{ scale: 0.95 }}
+          whileTap={{ scale: 0.98 }}
           drag="x"
           dragControls={controls}
-          dragConstraints={{ left: 0, right: 0 }}
-          dragElastic={0.01}
-          onDragEnd={toggleSwitch}
-          onTapStart={playButtonDown}
+          dragConstraints={{ left: 1, right: 1 }}
+          dragElastic={0.002}
+          dragDirectionLock={true}
+          onDrag={toggleSwitch}
         />
       </div>
     </div>
   );
 }
 
-export default ClickySwitch;
+export default ClickySwitch2;
