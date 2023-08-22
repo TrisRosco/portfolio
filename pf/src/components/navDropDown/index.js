@@ -81,7 +81,7 @@ const NavDropDown = (props) => {
               style={{ textDecoration: "none", color: "inherit" }}
               className="drop-down-item"
             >
-            <p>Cool interface</p>
+            <p>Haptic Feedback</p>
             </Link>
           </motion.div>
           {/* <motion.div
