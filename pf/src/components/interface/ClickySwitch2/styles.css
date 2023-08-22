@@ -30,6 +30,7 @@
     margin: 0px;
     background: #d9d9d9;
     cursor: pointer;
+    user-select: none;
     border-radius: 50%;
     box-shadow: 6px 0px 0px -1px rgba(165, 165, 165, 0.55),
     10px 0px 0px -2px rgba(155, 155, 155, 0.55),
