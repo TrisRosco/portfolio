@@ -15,11 +15,10 @@ function ClickyDial() {
         <motion.div
           className="dial-handle"
           layout
-          whileTap={{ scale: 0.95 }}
           drag="x"
           dragControls={controls}
           dragConstraints={{ left: 0, right: 0 }}
-          dragElastic={0.05}
+          dragElastic={0.1}
           style={{ rotate: rotVal }}
           whileDrag={{ rotate: rotVal }}
           onDrag={(event, info) => {
