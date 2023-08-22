@@ -10,7 +10,7 @@
 }
 
 .switch2-inner{
-    width: 75%;
+    width: 65%;
     height: 65%;
     background:  #b8b8b8;
     border-radius: 60px;
@@ -39,6 +39,7 @@
     26px 0px 0px -6px rgba(77, 77, 77, 0.55),
     inset 2px 2px 5px 2px rgba(0, 0, 0, 0.15),
     inset -2px -2px 5px 2px rgba(0, 0, 0, 0.15);
+    transition:  0.05s;
 }
 
 .switch2-handle[data-isOn="true"] {
@@ -50,4 +51,5 @@
     -26px 0px 0px -6px rgba(77, 77, 77, 0.55),
     inset 2px 2px 5px 2px rgba(0, 0, 0, 0.15),
     inset -2px -2px 5px 2px rgba(0, 0, 0, 0.15);
+    transition:  0.05s;
   }
