@@ -58,8 +58,8 @@ function ClickySwitch2() {
           whileTap={{ scale: 0.98 }}
           drag="x"
           dragControls={controls}
-          dragConstraints={{ left: 1, right: 1 }}
-          dragElastic={0.002}
+          dragConstraints={{ left: 0, right: 0 }}
+          dragElastic={0.01}
           dragDirectionLock={true}
           onDrag={toggleSwitch}
         />
