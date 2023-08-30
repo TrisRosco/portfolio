@@ -6,6 +6,14 @@
     text-align: center;
 }
 
+.interface-title{
+    color: #FFBD59;
+}
+
+.interface-subtitle{
+    color: #FFBD59;
+}
+
 .interface-container{
     display: flex;
     flex-direction: column;
