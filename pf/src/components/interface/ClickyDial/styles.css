@@ -10,10 +10,10 @@
 }
 
 .dial-inner{
-    width: 80%;
-    height: 65%;
+    width: 7rem;
+    height: 7rem;
     background:  #b8b8b8;
-    border-radius: 3px;
+    border-radius: 50%;
     box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.55);
     display: flex;
     justify-content: center;
@@ -24,9 +24,9 @@
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
-    background-color: #d9d9d9;
+    background-color: #a3a3a3;
     text-align: center;
-    color: dimgray;
+    color: rgb(53, 53, 53);
     cursor: pointer;
     user-select: none;
     box-shadow: inset 2px 2px 5px 2px rgba(0, 0, 0, 0.15), inset -2px -2px 5px 2px rgba(0, 0, 0, 0.15);
