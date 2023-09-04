@@ -1,3 +1,19 @@
-.tappy-switch.inner{
+.tappy-switch-outer{
     background-color: beige;
+    height: 100px;
+    width: 300px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tappy-switch-inner{
+    background-color: #b8b8b8;
+    height: 80px;
+    width: 280px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
