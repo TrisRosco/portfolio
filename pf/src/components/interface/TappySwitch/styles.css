@@ -34,11 +34,15 @@
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    font-size: large;
     color: rgb(255, 60, 46);
-    text-shadow: rgb(255, 62, 62) 0px 0px 5px;
+    text-shadow: rgb(255, 60, 46) 0px 0px 5px, rgb(102, 102, 102) 0px 0px 1px;
 }
 
 .tappy-switch-handle[data-isOn="true"] {
     box-shadow: inset -6px -6px 4px rgba(0, 0, 0, 0.15), inset -4px 6px 4px rgba(0, 0, 0, 0.15), 4px 2px 6px rgba(0, 0, 0, 0.55);
     background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.5) 50%, #b8b8b8 100%);
+    color: rgb(0, 255, 0);
+    text-shadow: rgb(0, 255, 0) 0px 0px 5px;
+
   }
