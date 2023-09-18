@@ -9,6 +9,7 @@ body {
   background-size: cover;
   font-family: 'Comfortaa', sans-serif;
   color: lightcyan;
+  overflow-x: hidden;
 }
 
 
