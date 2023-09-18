@@ -16,6 +16,12 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    box-shadow: inset 6px 6px 4px rgba(0, 0, 0, 0.15), inset 4px -6px 4px rgba(0, 0, 0, 0.15);
+}
+
+.tappy-switch-inner .text{
+    position: absolute;
+    z-index: 1;
 }
 
 .tappy-switch-inner[data-isOn="true"] {

@@ -18,6 +18,7 @@ const TappySwitch = () => {
   return <div className="tappy-switch-outer">
     <div className="tappy-switch-inner" data-isOn={isOn}>
         <div className="tappy-switch-handle" data-isOn={isOn} onClick={() => setIsOn(!isOn)}> { isOn ? "ON" : "OFF" } </div>
+        <span className="text">OFF ON</span>
     </div>
 
   </div>;
