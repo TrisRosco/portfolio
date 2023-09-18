@@ -19,12 +19,6 @@ function ClickySwitch2() {
     audioFlickOff.play();
   };
 
-  useEffect(() => {
-    vibrateDevice();
-    console.log("vibrate");
-    isOn ? playFlickOn() : playFlickOff();
-  }, [isOn]);
-
   function vibrateDevice() {
     if ("vibrate" in navigator) {
       navigator.vibrate(70);
@@ -32,10 +26,14 @@ function ClickySwitch2() {
   }
 
   function toggleSwitch(event, info) {
-    if (info.point.x > 0) {
+    if (isOn === false && info.point.x > 0) {
       setIsOn(true);
-    } else {
+      playFlickOn();
+      vibrateDevice();
+    } else if (isOn === true && info.point.x < 0) {
       setIsOn(false);
+      playFlickOff();
+      vibrateDevice();
     }
   }
 
