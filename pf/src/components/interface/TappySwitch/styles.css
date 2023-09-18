@@ -19,14 +19,20 @@
     box-shadow: inset 6px 6px 4px rgba(0, 0, 0, 0.15), inset 4px -6px 4px rgba(0, 0, 0, 0.15);
 }
 
-.tappy-switch-inner .text{
-    position: absolute;
-    z-index: 1;
-}
-
 .tappy-switch-inner[data-isOn="true"] {
     justify-content: flex-end;
   }
+
+.tappy-switch-inner .unselected{
+    color: #818181;
+    margin-left: 200px;
+    position: absolute;
+}
+
+.tappy-switch-inner .unselected[data-isOn="true"]{
+    color: #818181;
+    margin-right: 200px;
+}
 
 .tappy-switch-handle{
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.5) 50%, #b8b8b8 100%);
@@ -50,5 +56,4 @@
     background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.5) 50%, #b8b8b8 100%);
     color: rgb(0, 255, 0);
     text-shadow: rgb(0, 255, 0) 0px 0px 5px;
-
   }
