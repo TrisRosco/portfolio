@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import "./styles.css";
 import { motion, useDragControls } from "framer-motion";
 import flickOn from "../../../assets/sounds/flickOn.mp3";

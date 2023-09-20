@@ -29,6 +29,11 @@
     height: 90%;
     margin: 4px;
     background: #d9d9d9;
+    color: #b8b8b8;
+    font-size: 70px;
+    text-shadow: inset 2px 2px 4px 2px rgba(0, 0, 0, 0.55);
+    letter-spacing: -9px;
+    text-align: left;
     cursor: pointer;
     user-select: none;
     border-radius: 5px;

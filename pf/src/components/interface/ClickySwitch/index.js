@@ -69,7 +69,7 @@ function ClickySwitch() {
           dragElastic={0.01}
           onDragEnd={toggleSwitch}
           onTapStart={playButtonDown}
-        />
+        >||||||</motion.div>
       </div>
     </div>
   );
