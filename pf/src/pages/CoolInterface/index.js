@@ -13,14 +13,18 @@ const CoolInterface = () => {
         <NavBar />
       </header>
       <h1 className="interface-title">Haptic Feedback</h1>
-      <p className="interface-description">This is something that I'm currently working on!
+      <p className="interface-description">This is something that I'm currently working on! 
       <br />
-      View this page on a mobile device to see it in action.
+      View this on a mobile device for the full experience! <span id="tiny-text">(unless you've got a fancy vibrating mouse)</span>
       <br />
-      It's a collection of buttons and switches that give haptic feedback when you interact with them.
       <br />
-      I'm using the Framer Motion library to handle the animations and interactions.
+      So, what is haptic feedback? It's the little buzz that you feel when you tap a button on your phone. The idea is to make interfaces more intuitive and satisfying to use.
       <br />
+      I know I'm not alone in this, but I'm a sucker for a good interface. I love the little sounds and animations that make it feel like you're actually interacting with something,
+      <br />
+      and I'm a firm believer that good design is more than just how something looks. It's how it feels, how it sounds, and how it behaves.
+      <br />
+      A good interface is like a good joke. If you have to explain it, it's probably not very good!
       </p>
       <div className="interface-container">
         <h2 className="interface-subtitle">Clicky Switch</h2>
