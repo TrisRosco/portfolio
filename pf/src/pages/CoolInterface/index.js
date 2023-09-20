@@ -27,12 +27,22 @@ const CoolInterface = () => {
       A good interface is like a good joke. If you have to explain it, it's probably not very good!
       </p>
       <div className="interface-container">
-        <h2 className="interface-subtitle">Clicky Switch</h2>
-        <p>Tap, slide, then release to toggle</p>
-        <ClickySwitch />
+        <h2 className="interface-subtitle">Flick Switch</h2>
+        <p>Tap and drag left and right to toggle, nice and simple!
+        <br />
+        <br />
+        This was the my original idea, inspired by those metal toggle switches that you see on old amplifiers and stuff.
+        <br />
+        It doesn't matter who you are, you can't resist flicking one of those things! I wanted to replicate the feeling of that satisfying click
+        </p>
+        <ClickySwitch2 />
+        <p>But how is it done? We'll start with the CSS. The switch is made up of 3 divs, the outer, inner, and handle. The outer div is the background, the inner div is the switch itself, and the handle is the little thing that you drag.
+        <br />
+        The handle is a circle with a series of box-shadows stacked on top of each other, each one slightly offset and darker than the last. This gives the illusion of depth and makes it look like a 3D object.
+        </p>
         <h2 className="interface-subtitle">Flippy Switch</h2>
         <p>Tap and swipe left and right to toggle</p>
-        <ClickySwitch2 />
+        <ClickySwitch />
         <h2 className="interface-subtitle">The Dial</h2>
         <p>Currently broken, but it's funny so I've included it for now</p>
         <ClickyDial />
