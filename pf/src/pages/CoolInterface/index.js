@@ -39,7 +39,6 @@ const CoolInterface = () => {
         <h2 className="interface-subtitle">Tappy Switch</h2>
         <p>Tap to toggle</p>
         <TappySwitch />
-
       </div>
     </div>
   );

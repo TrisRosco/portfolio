@@ -26,14 +26,18 @@ function ClickySwitch2() {
   }
 
   function toggleSwitch(event, info) {
-    if (isOn === false && info.point.x > 0) {
-      setIsOn(true);
-      playFlickOn();
-      vibrateDevice();
-    } else if (isOn === true && info.point.x < 0) {
-      setIsOn(false);
-      playFlickOff();
-      vibrateDevice();
+    if (info.offset.x > 0) {
+      if (!isOn) {
+        setIsOn(true);
+        playFlickOn();
+        vibrateDevice();
+      }
+    } else {
+      if (isOn) {
+        setIsOn(false);
+        playFlickOff();
+        vibrateDevice();
+      }
     }
   }
 
