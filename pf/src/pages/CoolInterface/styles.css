@@ -22,3 +22,7 @@
     text-align: center;
     margin: 20px;
 }
+
+#tiny-text{
+    font-size: 10px;
+}

@@ -31,14 +31,23 @@ function ClickySwitch() {
   }
 
   function toggleSwitch(event, info) {
-    if (info.point.x > 0) {
-      setIsOn(true);
-      playButtonUp();
-    } else {
-      setIsOn(false);
-      playButtonUp();
+    const threshold = 200; 
+  
+    if (info.offset.x > threshold) {
+      if (!isOn) {
+        setIsOn(true);
+        playButtonUp();
+        vibrateDevice();
+      }
+    } else if (info.offset.x < -threshold) {
+      if (isOn) {
+        setIsOn(false);
+        playButtonUp();
+        vibrateDevice();
+      }
     }
   }
+
 
   const spring = {
     type: "spring",
@@ -60,7 +69,7 @@ function ClickySwitch() {
           dragElastic={0.01}
           onDragEnd={toggleSwitch}
           onTapStart={playButtonDown}
-        />
+        >||||||</motion.div>
       </div>
     </div>
   );

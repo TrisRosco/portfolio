@@ -1,43 +1,43 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import "./styles.css";
 import { motion, useDragControls } from "framer-motion";
-// import buttonDown from "../../../assets/sounds/buttonDown.mp3";
-// import buttonUp from "../../../assets/sounds/buttonUp.mp3";
+import flickOn from "../../../assets/sounds/flickOn.mp3";
+import flickOff from "../../../assets/sounds/flickOff.mp3";
 
 function ClickySwitch2() {
   const [isOn, setIsOn] = useState(false);
   const controls = useDragControls();
-  // const audioButtonDown = new Audio(buttonDown);
-  // const audioButtonUp = new Audio(buttonUp);
 
-  // const playButtonDown = () => {
-  //   audioButtonDown.play();
-  // };
+  const audioFlickOn = new Audio(flickOn);
+  const audioFlickOff = new Audio(flickOff);
 
-  // const playButtonUp = () => {
-  //   audioButtonUp.play();
-  // };
+  const playFlickOn = () => {
+    audioFlickOn.play();
+  };
 
-  useEffect(() => {
-    vibrateDevice();
-    console.log("vibrate");
-  }, [isOn]);
-
-
+  const playFlickOff = () => {
+    audioFlickOff.play();
+  };
 
   function vibrateDevice() {
-    // Check if the Vibration API is supported by the browser
     if ("vibrate" in navigator) {
-      navigator.vibrate(50); // Adjust the duration as needed
-
+      navigator.vibrate(70);
     }
   }
 
   function toggleSwitch(event, info) {
-    if (info.point.x > 0) {
-      setIsOn(true);
+    if (info.offset.x > 0) {
+      if (!isOn) {
+        setIsOn(true);
+        playFlickOn();
+        vibrateDevice();
+      }
     } else {
-      setIsOn(false);
+      if (isOn) {
+        setIsOn(false);
+        playFlickOff();
+        vibrateDevice();
+      }
     }
   }
 
