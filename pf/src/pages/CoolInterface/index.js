@@ -75,8 +75,23 @@ const CoolInterface = () => {
           and sets the flex direction of the handle to the opposite direction.
         </p>
         <h2 className="interface-subtitle">Tap & Slide Switch</h2>
-        <p>Tap, slide, and release to toggle</p>
+        <p>Tap, slide, and release to toggle
+        <br />
+        <br />
+        This one is a little more complicated, but it's fairly intuitive once you get the hang of it.
+        <br />
+        The idea is that it's not as easy to accidentally as the flick switch, so it can be used for more important things that you don't want to accidentally toggle.
+        </p>
         <ClickySwitch />
+        <p>
+        Much like the flick switch, this one is made up of 3 divs, the outer, inner, and handle.
+        <br />
+        The functionality is very similar to the flick switch, but instead of checking the x offset against 0, it checks it against a pre-defined threshold.
+        <br />
+        If the offset is greater than the threshold, the switch is turned on, and vice versa.
+        <br />
+        The threshold is set to 200, which is about 1/3 of the width of the handle, and it can be adjusted to suit the needs of the interface.
+        </p>
         <h2 className="interface-subtitle">Tappy Switch</h2>
         <p>Tap to toggle</p>
         <TappySwitch />
