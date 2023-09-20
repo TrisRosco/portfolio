@@ -90,7 +90,7 @@ const CoolInterface = () => {
         <br />
         If the offset is greater than the threshold, the switch is turned on, and vice versa.
         <br />
-        The threshold is set to 200, which is about 1/3 of the width of the handle, and it can be adjusted to suit the needs of the interface.
+        The threshold is set to 100, which is about 1/3 of the width of the handle, and it can be adjusted to suit the needs of the interface.
         </p>
         <h2 className="interface-subtitle">Tappy Switch</h2>
         <p>Tap to toggle</p>

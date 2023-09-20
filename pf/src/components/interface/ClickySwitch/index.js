@@ -31,7 +31,7 @@ function ClickySwitch() {
   }
 
   function toggleSwitch(event, info) {
-    const threshold = 200; 
+    const threshold = 100; 
   
     if (info.offset.x > threshold) {
       if (!isOn) {
