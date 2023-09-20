@@ -31,14 +31,21 @@ function ClickySwitch() {
   }
 
   function toggleSwitch(event, info) {
-    if (info.point.x > 0) {
-      setIsOn(true);
-      playButtonUp();
+    if (info.offset.x > 0) {
+      if (!isOn) {
+        setIsOn(true);
+        playButtonUp();
+        vibrateDevice();
+      }
     } else {
-      setIsOn(false);
-      playButtonUp();
+      if (isOn) {
+        setIsOn(false);
+        playButtonUp();
+        vibrateDevice();
+      }
     }
   }
+
 
   const spring = {
     type: "spring",
