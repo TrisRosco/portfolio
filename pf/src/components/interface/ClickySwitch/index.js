@@ -31,13 +31,15 @@ function ClickySwitch() {
   }
 
   function toggleSwitch(event, info) {
-    if (info.offset.x > 0) {
+    const threshold = 200; 
+  
+    if (info.offset.x > threshold) {
       if (!isOn) {
         setIsOn(true);
         playButtonUp();
         vibrateDevice();
       }
-    } else {
+    } else if (info.offset.x < -threshold) {
       if (isOn) {
         setIsOn(false);
         playButtonUp();
