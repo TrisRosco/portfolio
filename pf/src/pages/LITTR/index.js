@@ -81,7 +81,7 @@ const LITTR = () => {
               main page
             </a>{" "}
             were built by me. Initially, they were entirely JS and CSS, but they
-            were later rebuilt using MUI as a means of standardizing the design.
+            were later rebuilt using MUI as a means of standardising the design.
           </p>
           <div className="example-images-container">
             <div className="example-image">
