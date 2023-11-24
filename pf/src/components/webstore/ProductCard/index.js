@@ -23,7 +23,7 @@ const ProductCard = (props) => {
       <CardOverflow>
         <AspectRatio sx={{ width: 345 }}>
           <img
-            src="https://i.pinimg.com/originals/4c/a3/1e/4ca31e5343e89bc550044caec29543e6.jpg"
+            src={props.image}
             loading="lazy"
             alt=""
           />
