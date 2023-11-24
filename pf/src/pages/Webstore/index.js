@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 import NavBar from "../../components/navBar";
-import Checkout from "../../components/webstore/Checkout";
+
 import ProductCard from "../../components/webstore/ProductCard";
 import Grid from "@mui/material/Unstable_Grid2";
 
@@ -58,8 +58,14 @@ const Webstore = () => {
           price="£1.99"
           details="Look at this funny little fella"
         />
+        <ProductCard
+          name="Jeff"
+          price="£1.99"
+          details="Look at this funny little fella"
+        />
+        
       </Grid>
-      <Checkout />
+
     </React.Fragment>
   );
 };
