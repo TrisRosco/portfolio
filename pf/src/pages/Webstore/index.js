@@ -4,6 +4,7 @@ import NavBar from "../../components/navBar";
 import plan from "./plan.JPG";
 import Checkout from "../../components/webstore/Checkout";
 import ProductCard from "../../components/webstore/ProductCard";
+import Grid from '@mui/material/Unstable_Grid2'; 
 
 const Webstore = () => {
 
@@ -33,11 +34,11 @@ const Webstore = () => {
         <img src={plan} alt="plan" id="plan" />
       </div>
 
-      <div className="webstore_container">
+      <Grid className="webstore_container" >
         <p>It'll be here somewhere</p>
         <ProductCard name="Jeff" price="£1.99" details="Look at this funny little fella"/>
-
-      </div>
+        <ProductCard name="Jeff" price="£1.99" details="Look at this funny little fella"/>
+      </Grid>
       <Checkout />
 
     </React.Fragment>

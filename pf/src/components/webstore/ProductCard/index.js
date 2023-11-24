@@ -6,6 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Collapse from "@mui/material/Collapse";
 import Typography from "@mui/material/Typography";
+import Stack from "@mui/material/Stack";
 
 const ProductCard = (props) => {
   const [expanded, setExpanded] = useState(false);
@@ -22,19 +23,21 @@ const ProductCard = (props) => {
         <Typography gutterBottom variant="h5" component="div">
           {props.name}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="h6" color="text.secondary">
           {props.price}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Add to Cart</Button>
-        <Button size="small" onClick={() => setExpanded(!expanded)}>
-          Learn More
-        </Button>
-      </CardActions>
+      <Stack direction="row" spacing={2} justifyContent="right">
+        <CardActions>
+          <Button variant="outlined" onClick={() => setExpanded(!expanded)}>
+            {expanded ? "^" : "v"}
+          </Button>
+          <Button variant="contained">Add to Cart</Button>
+        </CardActions>
+      </Stack>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>Details:</Typography>
+          <Typography variant="h7">Details:</Typography>
           <Typography paragraph>{props.details}</Typography>
         </CardContent>
       </Collapse>
