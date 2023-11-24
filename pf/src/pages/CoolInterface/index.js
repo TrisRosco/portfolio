@@ -95,11 +95,16 @@ const CoolInterface = () => {
         </p>
         <h2 className="interface-subtitle">Tappy Switch</h2>
         <p>Tap to toggle</p>
+        <p>
+        This is the simplest switch, it's essentially a rocker switch like you'd use to turn on a light.
+        <br/>
+        It's not something that you'd want to use for something important, as it's very easy to accidentally toggle.
+        </p>
         <TappySwitch />
-        <h2 className="interface-subtitle">The Dial</h2>
-        <p>Currently broken, but it's funny so I've included it for now</p>
+        {/* <h2 className="interface-subtitle">The Dial</h2>
+        {/* <p>Currently broken, but it's funny so I've included it for now</p>
         <ClickyDial />
-        <ClickyDial2 />
+        <ClickyDial2 /> */}
       </div>
     </div>
   );
