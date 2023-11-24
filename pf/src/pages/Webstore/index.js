@@ -40,19 +40,31 @@ const Webstore = () => {
           image="https://i.imgur.com/qnjgZE7.jpg"
           name="Gerald"
           price="£2.99"
-          details="This is Gerald, he's a an agressive little guy honestly, i wouldn't recommend him"
+          details="This is Gerald, he's a an agressive little guy honestly, I wouldn't recommend him"
         />
         <ProductCard
           image="https://i.imgur.com/yeV5Aeq.jpg"
           name="Sandra"
           price="£4.99"
-          details="This is Sandra, she's a bug"
+          details="This is Sandra. She's uhhhhhh...I'm sorry uhh she's basically a bug or something I dunno"
         />
         <ProductCard
           image="https://i.imgur.com/8crWihc.jpg"
           name="Dave"
           price="£0.99"
           details="This is Dave. Dave stinks. Don't buy Dave"
+        />
+        <ProductCard
+          image="https://i.imgur.com/hbJrpIz.jpg"
+          name="Archibald"
+          price="£6.99"
+          details="This is Archibald. I'm not sure what he is but he's got some long arms" 
+        />
+        <ProductCard
+          image="https://i.imgur.com/4R9Vc3v.jpg"
+          name="Bungus"
+            price="£4.99"
+            details="This is Bungus. He's a fun guy hahahahahaha (he has cordyceps)"
         />
       </Grid>
     </React.Fragment>
