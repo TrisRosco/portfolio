@@ -4,6 +4,7 @@ import NavBar from "../../components/navBar";
 import ClickySwitch from "../../components/interface/ClickySwitch";
 import ClickySwitch2 from "../../components/interface/ClickySwitch2";
 import ClickyDial from "../../components/interface/ClickyDial";
+import ClickyDial2 from "../../components/interface/ClickyDial2";
 import TappySwitch from "../../components/interface/TappySwitch";
 
 const CoolInterface = () => {
@@ -98,6 +99,7 @@ const CoolInterface = () => {
         <h2 className="interface-subtitle">The Dial</h2>
         <p>Currently broken, but it's funny so I've included it for now</p>
         <ClickyDial />
+        <ClickyDial2 />
       </div>
     </div>
   );
