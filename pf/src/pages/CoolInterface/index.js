@@ -3,8 +3,8 @@ import "./styles.css";
 import NavBar from "../../components/navBar";
 import ClickySwitch from "../../components/interface/ClickySwitch";
 import ClickySwitch2 from "../../components/interface/ClickySwitch2";
-import ClickyDial from "../../components/interface/ClickyDial";
-import ClickyDial2 from "../../components/interface/ClickyDial2";
+// import ClickyDial from "../../components/interface/ClickyDial";
+// import ClickyDial2 from "../../components/interface/ClickyDial2";
 import TappySwitch from "../../components/interface/TappySwitch";
 
 const CoolInterface = () => {
