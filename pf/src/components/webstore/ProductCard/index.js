@@ -38,9 +38,11 @@ const ProductCard = (props) => {
           </Button>
           <FormControl size="small" variant="outlined">
             <Select defaultValue={1}>
-              <MenuItem value={1}>1</MenuItem>
-              <MenuItem value={2}>2</MenuItem>
-              <MenuItem value={3}>3</MenuItem>
+            {[...Array(8)].map((_, i) => (
+                <MenuItem key={i} value={i + 1}>
+                  {i + 1}
+                </MenuItem>
+              ))}
             </Select>
           </FormControl>
           <Button variant="contained">Add to Cart</Button>
