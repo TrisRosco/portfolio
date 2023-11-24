@@ -8,7 +8,6 @@ const Checkout = () => {
   return (
     <>
       <Dialog open={open} onClose={() => setOpen(false)}>
-
         I am a dialog look at me
         <button onClick={() => setOpen(false)}>Alrighty then...</button>
       </Dialog>

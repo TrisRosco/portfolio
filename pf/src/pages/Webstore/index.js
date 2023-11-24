@@ -3,6 +3,7 @@ import "./styles.css";
 import NavBar from "../../components/navBar";
 import plan from "./plan.JPG";
 import Checkout from "../../components/webstore/Checkout";
+import ProductCard from "../../components/webstore/ProductCard";
 
 const Webstore = () => {
 
@@ -34,6 +35,8 @@ const Webstore = () => {
 
       <div className="webstore_container">
         <p> It'll be here somewhere</p>
+        <ProductCard />
+
       </div>
       <Checkout />
 
