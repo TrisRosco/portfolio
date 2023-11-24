@@ -6,13 +6,17 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Collapse from "@mui/material/Collapse";
 import Typography from "@mui/material/Typography";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
 import Stack from "@mui/material/Stack";
 
 const ProductCard = (props) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, margin: 2 }}>
       <CardMedia
         component="img"
         height="140"
@@ -32,6 +36,13 @@ const ProductCard = (props) => {
           <Button variant="outlined" onClick={() => setExpanded(!expanded)}>
             {expanded ? "^" : "v"}
           </Button>
+          <FormControl size="small" variant="outlined">
+            <Select defaultValue={1}>
+              <MenuItem value={1}>1</MenuItem>
+              <MenuItem value={2}>2</MenuItem>
+              <MenuItem value={3}>3</MenuItem>
+            </Select>
+          </FormControl>
           <Button variant="contained">Add to Cart</Button>
         </CardActions>
       </Stack>
