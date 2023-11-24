@@ -13,8 +13,7 @@ img {
 }
 
 img:hover {
-  width: 60px;
-  height: auto;
+  transform: scale(1.25);
   transition: 0.2s;
 }
 
@@ -80,11 +79,12 @@ img:hover {
   text-decoration: none;
   color: #FFBD59;
   transition: 0.2s;
+  font-weight: bold;
 }
 
 #linkedin-github:hover{
   transition: 0.2s;
-  font-size: large;
+  font-size: larger;
 }
 
 .my-name{
