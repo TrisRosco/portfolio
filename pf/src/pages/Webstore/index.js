@@ -1,46 +1,65 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./styles.css";
 import NavBar from "../../components/navBar";
-import plan from "./plan.JPG";
 import Checkout from "../../components/webstore/Checkout";
 import ProductCard from "../../components/webstore/ProductCard";
-import Grid from '@mui/material/Unstable_Grid2'; 
+import Grid from "@mui/material/Unstable_Grid2";
 
 const Webstore = () => {
-
-
-  useEffect(() => {
-    document.title = "Webstore";
-  }, []);
-
   return (
     <React.Fragment className="webstore">
       <NavBar />
-      <div className="webstore_description">
-        <h1>Webstore</h1>
-        <p>Coming soon!</p>
-        <p>
-          Here's a sneak peak of what's to come:
-          <br />
-          On the face of it, it's a webstore that displays a variety of products
-          pulled from a database via an API.
-          <br />
-          but, Not only is it a demonstration of my ability to create a
-          webstore, it's also an exercise in Object Oriented Programming.
-          <br />
-          I'm using this project to learn how to use classes and objects in
-          JavaScript.
-        </p>
-        <img src={plan} alt="plan" id="plan" />
-      </div>
-
-      <Grid className="webstore_container" >
-        <p>It'll be here somewhere</p>
-        <ProductCard name="Jeff" price="£1.99" details="Look at this funny little fella"/>
-        <ProductCard name="Jeff" price="£1.99" details="Look at this funny little fella"/>
+      <Grid
+        className="webstore_container"
+        container
+        spacing={2}
+        display={"flex"}
+        direction={"row"}
+        justifyContent={"center"}
+        alignItems={"center"}
+      >
+        <ProductCard
+          name="Jeff"
+          price="£1.99"
+          details="Look at this funny little fella"
+        />
+        <ProductCard
+          name="James"
+          price="£0.99"
+          details="This fella isn't great, but he's cheap"
+        />
+        <ProductCard
+          name="Josh"
+          price="£8.99"
+          details="This fella is a premium fella, honestly he's not worth it"
+        />
+        <ProductCard
+          name="Jeff"
+          price="£1.99"
+          details="Look at this funny little fella"
+        />
+        <ProductCard
+          name="Jeff"
+          price="£1.99"
+          details="Look at this funny little fella"
+        />
+        <ProductCard
+          name="James"
+          price="£0.99"
+          details="This fella isn't great, but he's cheap"
+        />
+        <ProductCard
+          name="Josh"
+          price="£8.99"
+          details="This fella is a premium fella, honestly he's not worth it"
+        />
+        <ProductCard
+          name="Jeff"
+          price="£1.99"
+          details="Look at this funny little fella"
+        />
       </Grid>
       <Checkout />
-
     </React.Fragment>
   );
 };

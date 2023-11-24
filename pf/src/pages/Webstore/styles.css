@@ -10,13 +10,8 @@
 }
 
 .webstore_container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background : #d9d9d9;
-    width : 90%;
     margin : 20px auto;
     border-radius: 10px;
     box-shadow: inset 4px 4px 2px #9c9c9c;
-    
 }
