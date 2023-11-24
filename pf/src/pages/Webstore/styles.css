@@ -3,7 +3,7 @@
     height: auto;
 }
 
-.webstore_description{
+.webstore_description, .webstore_title{
     display: flex;
     flex-direction: column;
     align-items: center;
