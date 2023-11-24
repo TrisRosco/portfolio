@@ -33,7 +33,7 @@ const NavDropDown = (props) => {
           }}
           className="drop-down"
         >
-        <motion.div className="drop-down-spacer"></motion.div>
+          <motion.div className="drop-down-spacer"></motion.div>
           {/* <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -76,22 +76,28 @@ const NavDropDown = (props) => {
             transition={{ delay: 0.5 }}
             className="drop-down-item"
           >
-          <Link
+            <Link
               to="/interface"
               style={{ textDecoration: "none", color: "inherit" }}
               className="drop-down-item"
             >
-            <p>Haptic Feedback</p>
+              <p>Haptic Feedback</p>
             </Link>
           </motion.div>
-          {/* <motion.div
+          <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
             className="drop-down-item"
           >
-            <p>Jeff</p>
-          </motion.div> */}
+            <Link
+              to="/webstore"
+              style={{ textDecoration: "none", color: "inherit" }}
+              className="drop-down-item"
+            >
+              <p>Webstore</p>
+            </Link>
+          </motion.div>
         </motion.div>
       )}
     </div>
