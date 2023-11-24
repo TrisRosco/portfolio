@@ -5,6 +5,7 @@ import CRT from "../../pages/CRT";
 import Contact from "../../pages/Contact";
 import LITTR from "../../pages/LITTR";
 import CoolInterface from "../../pages/CoolInterface";
+import Webstore from "../../pages/Webstore";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/littr" element={<LITTR />}/>
         <Route path="/interface" element={<CoolInterface />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/webstore" element={<Webstore />} />
 
       </Routes>
     </BrowserRouter>
