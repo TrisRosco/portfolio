@@ -35,7 +35,7 @@ const Webstore = () => {
 
       <div className="webstore_container">
         <p> It'll be here somewhere</p>
-        <ProductCard />
+        <ProductCard name="Jeff" price="£1.99" />
 
       </div>
       <Checkout />

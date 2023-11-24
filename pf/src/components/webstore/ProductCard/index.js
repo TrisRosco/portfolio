@@ -5,7 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-const ProductCard = () => {
+const ProductCard = (props) => {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
@@ -16,10 +16,10 @@ const ProductCard = () => {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Product Name
+          {props.name}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Product Description
+          {props.price}
         </Typography>
       </CardContent>
       <CardActions>
