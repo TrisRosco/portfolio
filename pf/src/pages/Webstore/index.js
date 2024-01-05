@@ -18,7 +18,7 @@ const Webstore = () => {
         On the face of it, it's a webstore that displays a variety of products
         pulled from a database via an API.
         <br />
-        but, Not only is it a demonstration of my ability to create a webstore,
+        Not only is it a demonstration of my ability to create a webstore,
         it's also an exercise in Object Oriented Programming.
       </Typography>
       <Grid
@@ -84,3 +84,4 @@ const Webstore = () => {
 };
 
 export default Webstore;
+
