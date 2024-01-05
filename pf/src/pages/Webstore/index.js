@@ -7,19 +7,21 @@ import { Typography } from "@mui/material";
 
 const Webstore = () => {
   return (
-    <React.Fragment className="webstore">
+    <React.Fragment>
       <NavBar />
       <Typography variant="h2" className="webstore_title">
         Welcome to the (WIP) Webstore
       </Typography>
-      <Typography variant="h4 " className="webstore_description" sx={{ margin: 2 }}>
+      <Typography
+        variant="h4 "
+        className="webstore_description"
+        sx={{ margin: 2 }}
+      >
         This is a project I'm currently working on.
         <br />
         On the face of it, it's a webstore that displays a variety of products
         pulled from a database via an API.
         <br />
-        Not only is it a demonstration of my ability to create a webstore,
-        it's also an exercise in Object Oriented Programming.
       </Typography>
       <Grid
         className="webstore_container"
@@ -84,4 +86,3 @@ const Webstore = () => {
 };
 
 export default Webstore;
-
