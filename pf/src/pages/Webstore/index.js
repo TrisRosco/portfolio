@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./styles.css";
 import NavBar from "../../components/navBar";
 import ProductCard from "../../components/webstore/ProductCard";
 import Grid from "@mui/material/Unstable_Grid2";
 import { Typography } from "@mui/material";
+import { getProducts } from "../../backend/queries";
 
 const Webstore = () => {
+  const [products, setProducts] = useState([]);
+
+  const fetchProducts = async () => {
+    const data = await getProducts();
+    setProducts(data);
+  };
+
+  useEffect(() => {
+    fetchProducts();
+  }, []); 
+
   return (
     <React.Fragment>
       <NavBar />
@@ -32,7 +44,16 @@ const Webstore = () => {
         justifyContent={"center"}
         alignItems={"center"}
       >
-        <ProductCard
+        {products.map((product) => (
+          <ProductCard
+            key={product.id}
+            image={product.image}
+            name={product.name}
+            price={product.price}
+            details={product.details}
+          />
+        ))}
+        {/* <ProductCard
           image="https://i.imgur.com/o3eFWf0.jpg"
           name="Greg"
           price="£5.99"
@@ -79,7 +100,7 @@ const Webstore = () => {
           name="Bungus"
           price="£4.99"
           details="This is Bungus. He's a fun guy hahahahahaha (he has cordyceps)"
-        />
+        /> */}
       </Grid>
     </React.Fragment>
   );
