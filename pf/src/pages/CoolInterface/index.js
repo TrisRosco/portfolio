@@ -102,6 +102,7 @@ const CoolInterface = () => {
         </p>
         </Card>
         <ClickySwitch />
+        <Card color="#3a3a3a">
         <p className="interface-description">
           Much like the flick switch, this one is made up of 3 divs, the outer,
           inner, and handle.
@@ -117,6 +118,9 @@ const CoolInterface = () => {
           handle, and it can be adjusted to suit the needs of the interface.
         </p>
         </Card>
+        </Card>
+        <Card color="#6a6a6a">
+          <Card color="#3a3a3a">
         <h2 className="interface-subtitle">Tappy Switch</h2>
         <p>Tap to toggle</p>
         <p>
@@ -126,11 +130,13 @@ const CoolInterface = () => {
           It's not something that you'd want to use for something important, as
           it's very easy to accidentally toggle.
         </p>
+        </Card>
         <TappySwitch />
         {/* <h2 className="interface-subtitle">The Dial</h2>
         {/* <p>Currently broken, but it's funny so I've included it for now</p>
         <ClickyDial />
         <ClickyDial2 /> */}
+        </Card>
       </div>
     </div>
   );
