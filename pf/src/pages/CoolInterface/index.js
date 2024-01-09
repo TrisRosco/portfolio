@@ -37,12 +37,11 @@ const CoolInterface = () => {
         it's probably not very good!
       </p>
       <div className="interface-container">
-        <Card color="#4a4a4a">
+        <Card color="#6a6a6a">
           <Card color="#3a3a3a">
             <h2 className="interface-subtitle">Flick Switch</h2>
-            <p>
+            <p className="interface-description">
               Tap and drag left and right to toggle, nice and simple!
-              <br />
               <br />
               This was the my original idea, inspired by those metal toggle
               switches that you see on old amplifiers and stuff.
@@ -54,9 +53,10 @@ const CoolInterface = () => {
           </Card>
           <ClickySwitch2 />
           <Card color="#3a3a3a">
-            <p>
-              But how is it done? We'll start with the CSS. The switch is made
-              up of 3 divs, the outer, inner, and handle. The outer div is the
+            <p className="interface-description">
+              But how is it done? We'll start with the CSS. 
+              <br />
+              The switch is made up of 3 divs, the outer, inner, and handle. The outer div is the
               background, the inner div is the switch itself, and the handle is
               the little thing that you drag.
               <br />
@@ -86,8 +86,10 @@ const CoolInterface = () => {
             </p>
           </Card>
         </Card>
+        <Card color="#6a6a6a">
+          <Card color="#3a3a3a">
         <h2 className="interface-subtitle">Tap & Slide Switch</h2>
-        <p>
+        <p className="interface-description">
           Tap, slide, and release to toggle
           <br />
           <br />
@@ -98,8 +100,9 @@ const CoolInterface = () => {
           so it can be used for more important things that you don't want to
           accidentally toggle.
         </p>
+        </Card>
         <ClickySwitch />
-        <p>
+        <p className="interface-description">
           Much like the flick switch, this one is made up of 3 divs, the outer,
           inner, and handle.
           <br />
@@ -113,6 +116,7 @@ const CoolInterface = () => {
           The threshold is set to 200, which is about 1/3 of the width of the
           handle, and it can be adjusted to suit the needs of the interface.
         </p>
+        </Card>
         <h2 className="interface-subtitle">Tappy Switch</h2>
         <p>Tap to toggle</p>
         <p>
