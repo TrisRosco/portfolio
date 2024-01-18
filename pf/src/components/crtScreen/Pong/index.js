@@ -1,38 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./styles.css";
 
 const Pong = () => {
-
-    useEffect(() => {
-        const leftPaddle = document.getElementById("left_paddle");
-        const rightPaddle = document.getElementById("right_paddle");
-        const ball = document.querySelector(".pong_ball");
-        const gameSection = document.querySelector(".pong_game_section");
-
-        const movePaddle = (paddle, direction) => {
-            if (direction === "up") {
-                paddle.style.top = paddle.offsetTop - 10 + "px";
-            } else if (direction === "down") {
-                paddle.style.top = paddle.offsetTop + 10 + "px";
-            }
-        }
-
-        document.addEventListener("keydown", (e) => {
-            if (e.key === "w") {
-                movePaddle(leftPaddle, "up");
-            } else if (e.key === "s") {
-                movePaddle(leftPaddle, "down");
-            }
-        }
-        )
-
-    }, [])
+  const [gameState, setGameState] = useState({
+    leftScore: 0,
+    rightScore: 0,
+    isPlaying: false,
+  });
+  const [leftPaddleY, setLeftPaddleY] = useState(0);
+  const [rightPaddleY, setRightPaddleY] = useState(0);
+  const [ballData, setBallData] = useState({
+    x: 0,
+    y: 0,
+    speed: 0,
+    direction: 0,
+  });
 
 
   return (
     <>
       <div className="pong_screen">
-
         <div className="pong_game_section">
           <div className="pong_paddle" id="left_paddle"></div>
           <div className="pong_ball"></div>
