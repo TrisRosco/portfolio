@@ -8,10 +8,16 @@
 
 .interface-title{
     color: #FFBD59;
+
 }
 
 .interface-subtitle{
     color: #FFBD59;
+    margin: 10px;
+}
+
+.interface-description{
+    margin: 10px;
 }
 
 .interface-container{
@@ -20,7 +26,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 20px;
 }
 
 #tiny-text{
