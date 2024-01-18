@@ -7,8 +7,8 @@ const Pong = () => {
     rightScore: 0,
     isPlaying: false,
   });
-  const [leftPaddleY, setLeftPaddleY] = useState(0);
-  const [rightPaddleY, setRightPaddleY] = useState(0);
+  const [leftPaddleY, setLeftPaddleY] = useState(200);
+  const [rightPaddleY, setRightPaddleY] = useState(200);
   const [ballData, setBallData] = useState({
     x: 0,
     y: 0,
@@ -16,14 +16,23 @@ const Pong = () => {
     direction: 0,
   });
 
-
   return (
     <>
       <div className="pong_screen">
         <div className="pong_game_section">
-          <div className="pong_paddle" id="left_paddle"></div>
+          <div
+            className="pong_paddle"
+            style={{
+              right: leftPaddleY,
+            }}
+          ></div>
           <div className="pong_ball"></div>
-          <div className="pong_paddle" id="right_paddle"></div>
+          <div
+            className="pong_paddle"
+            style={{
+              left: rightPaddleY,
+            }}
+          ></div>
         </div>
       </div>
     </>
