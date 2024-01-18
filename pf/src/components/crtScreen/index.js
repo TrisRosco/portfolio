@@ -1,10 +1,18 @@
 import React, { useState, useEffect } from "react";
 import "./styles.css";
 import face from "../../assets/images/faceLQ.png";
+import Pong from "./Pong";
 
 const CrtScreen = (props) => {
   const [isSelected, setIsSelected] = useState(props.isSelected);
   const [isOff, setIsOff] = useState(props.isOff);
+
+  const pongContent = (
+    <div className="crtScreen-content-text">
+      <Pong />
+    </div>
+  );
+
 
   const altContent = (
     <div className="crtScreen-content-text">
@@ -78,7 +86,7 @@ const CrtScreen = (props) => {
   return (
     <div className={isOff ? "crtScreen-off" : "crtScreen"}>
       <div className="crtScreen-content">
-        {isSelected ? altContent : defaultContent}
+        {isSelected ? altContent : pongContent}
       </div>
     </div>
   );

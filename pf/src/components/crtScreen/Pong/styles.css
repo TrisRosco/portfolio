@@ -1,0 +1,25 @@
+.pong_ball {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  animation: pong_ball 1s infinite;
+}
+
+.pong_paddle {
+  position: absolute;
+  width: 10px;
+  height: 60px;
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+#left_paddle {
+  right: 200px;
+}
+
+#right_paddle {
+    left: 200px;
+}
+
