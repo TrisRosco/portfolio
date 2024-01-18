@@ -7,8 +7,8 @@ const Pong = () => {
     rightScore: 0,
     isPlaying: false,
   });
-  const [leftPaddleY, setLeftPaddleY] = useState(0);
-  const [rightPaddleY, setRightPaddleY] = useState(0);
+  const [leftPaddleY, setLeftPaddleY] = useState(-250);
+  const [rightPaddleY, setRightPaddleY] = useState(-20);
   const [ballData, setBallData] = useState({
     x: 0,
     y: 0,
@@ -16,7 +16,32 @@ const Pong = () => {
     direction: 0,
   });
 
+  const handleKeyDown = (e) => {
+    if (e.key === "w") {
+      handleMoveUp();
+    } else if (e.key === "s") {
+      handleMoveDown();
+    }
+  };
 
+  const handleMoveUp = () => {
+    if (leftPaddleY > -250) {
+      setLeftPaddleY(leftPaddleY - 10);
+    }
+  };
+
+  const handleMoveDown = () => {
+    if (leftPaddleY < 200) {
+      setLeftPaddleY(leftPaddleY + 10);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [leftPaddleY]);
 
   return (
     <>
@@ -30,7 +55,13 @@ const Pong = () => {
               top: leftPaddleY,
             }}
           ></div>
-          <div className="pong_ball"></div>
+          <div
+            className="pong_ball"
+            style={{
+              left: ballData.x,
+              top: ballData.y,
+            }}
+          ></div>
           <div
             className="pong_paddle"
             id="right_paddle"
