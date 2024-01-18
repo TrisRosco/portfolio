@@ -2,19 +2,25 @@ import React, { useState, useEffect } from "react";
 import "./styles.css";
 
 const Pong = () => {
+  //States_______________________________
+
   const [gameState, setGameState] = useState({
     leftScore: 0,
     rightScore: 0,
     isPlaying: false,
   });
-  const [leftPaddleY, setLeftPaddleY] = useState(-250);
-  const [rightPaddleY, setRightPaddleY] = useState(-20);
   const [ballData, setBallData] = useState({
     x: 0,
     y: 0,
     speed: 0,
     direction: 0,
   });
+  const [paddleData, setPaddleData] = useState({
+    leftPaddleY: 0,
+    rightPaddleY: 0,
+  });
+
+  //Controls_____________________________
 
   const handleKeyDown = (e) => {
     if (e.key === "w") {
@@ -25,14 +31,14 @@ const Pong = () => {
   };
 
   const handleMoveUp = () => {
-    if (leftPaddleY > -250) {
-      setLeftPaddleY(leftPaddleY - 10);
+    if (paddleData.leftPaddleY > -250) {
+      setPaddleData({ leftPaddleY: paddleData.leftPaddleY - 10 });
     }
   };
 
   const handleMoveDown = () => {
-    if (leftPaddleY < 200) {
-      setLeftPaddleY(leftPaddleY + 10);
+    if (paddleData.leftPaddleY < 200) {
+      setPaddleData({ leftPaddleY: paddleData.leftPaddleY + 10 });
     }
   };
 
@@ -41,7 +47,9 @@ const Pong = () => {
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, [leftPaddleY]);
+  }, [paddleData.leftPaddleY]);
+
+  //Game Logic___________________________
 
   return (
     <>
@@ -52,7 +60,7 @@ const Pong = () => {
             id="left_paddle"
             style={{
               left: -200,
-              top: leftPaddleY,
+              top: paddleData.leftPaddleY,
             }}
           ></div>
           <div
@@ -67,7 +75,7 @@ const Pong = () => {
             id="right_paddle"
             style={{
               right: -200,
-              top: rightPaddleY,
+              top: paddleData.rightPaddleY,
             }}
           ></div>
         </div>
