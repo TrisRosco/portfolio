@@ -51,6 +51,76 @@ const Pong = () => {
 
   //Game Logic___________________________
 
+  const startGame = () => {
+    setGameState({ ...gameState, isPlaying: true });
+    setBallData({
+      ...ballData,
+      x: 0,
+      y: 0,
+      speed: 10,
+      direction: Math.random() * 360,
+    });
+  };
+
+  const endGame = () => {
+    setGameState({ ...gameState, isPlaying: false });
+    setBallData({
+      ...ballData,
+      x: 0,
+      y: 0,
+      speed: 0,
+      direction: 0,
+    });
+  };
+
+  const moveBall = () => {
+    let newBallX = ballData.x + ballData.speed * Math.cos(ballData.direction);
+    let newBallY = ballData.y + ballData.speed * Math.sin(ballData.direction);
+    setBallData({ ...ballData, x: newBallX, y: newBallY });
+  };
+
+  const checkCollision = () => {
+    //Check if ball hits left paddle
+    if (
+      ballData.x < -180 &&
+      ballData.y > paddleData.leftPaddleY - 50 &&
+      ballData.y < paddleData.leftPaddleY + 50
+    ) {
+      let newDirection = 180 - ballData.direction;
+      setBallData({ ...ballData, direction: newDirection });
+    }
+    //Check if ball hits right paddle
+    if (
+      ballData.x > 180 &&
+      ballData.y > paddleData.rightPaddleY - 50 &&
+      ballData.y < paddleData.rightPaddleY + 50
+    ) {
+      let newDirection = 180 - ballData.direction;
+      setBallData({ ...ballData, direction: newDirection });
+    }
+    //Check if ball hits top or bottom
+    if (ballData.y > 240 || ballData.y < -240) {
+      let newDirection = -ballData.direction;
+      setBallData({ ...ballData, direction: newDirection });
+    }
+    //Check if ball goes off screen
+    if (ballData.x > 240) {
+      setGameState({ ...gameState, leftScore: gameState.leftScore + 1 });
+      endGame();
+    }
+    if (ballData.x < -240) {
+      setGameState({ ...gameState, rightScore: gameState.rightScore + 1 });
+      endGame();
+    }
+  };
+
+  useEffect(() => {
+    if (gameState.isPlaying) {
+      moveBall();
+      checkCollision();
+    }
+  }, [ballData]);
+
   return (
     <>
       <div className="pong_screen">
@@ -80,6 +150,13 @@ const Pong = () => {
           ></div>
         </div>
       </div>
+        <div className="pong_controls">
+            <div className="pong_score">
+            <p>{gameState.leftScore}</p>
+            <p>{gameState.rightScore}</p>
+            </div>
+            <button onClick={startGame}>Start Game</button>
+        </div>
     </>
   );
 };

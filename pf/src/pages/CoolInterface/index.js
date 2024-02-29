@@ -3,8 +3,7 @@ import "./styles.css";
 import NavBar from "../../components/navBar";
 import ClickySwitch from "../../components/interface/ClickySwitch";
 import ClickySwitch2 from "../../components/interface/ClickySwitch2";
-// import ClickyDial from "../../components/interface/ClickyDial";
-// import ClickyDial2 from "../../components/interface/ClickyDial2";
+import TabletControls from "../../components/interface/TabletControls";
 import Card from "../../components/card";
 import TappySwitch from "../../components/interface/TappySwitch";
 
@@ -136,6 +135,10 @@ const CoolInterface = () => {
         {/* <p>Currently broken, but it's funny so I've included it for now</p>
         <ClickyDial />
         <ClickyDial2 /> */}
+
+        </Card>
+        <Card color="#6a6a6a">
+          <TabletControls/>
         </Card>
       </div>
     </div>

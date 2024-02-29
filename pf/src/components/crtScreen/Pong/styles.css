@@ -4,7 +4,7 @@
   height: 15px;
   border-radius: 50%;
   background-color: #fff;
-
+    transition: all 0.2s ease;
 }
 
 .pong_paddle {
@@ -13,6 +13,23 @@
   height: 60px;
   background-color: #fff;
   transition: all 0.2s ease;
+}
+
+.pong_controls {
+    position: absolute;
+    top: 200px;
+    left: -20px;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pong_score {
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    align-items: center;
 }
 
 
